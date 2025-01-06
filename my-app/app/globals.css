@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* 
+      Your light mode palette 
+      - #F8FAFC   (lightest; used as background)
+      - #D9EAFD
+      - #BCCCDC
+      - #9AA6B2   (darkest; used as main text)
+    */
+    --background: #f8fafc;
+    --foreground: #9aa6b2;
+
+    --card: #f8fafc;
+    --card-foreground: #9aa6b2;
+
+    --popover: #f8fafc;
+    --popover-foreground: #9aa6b2;
+
+    --primary: #d9eafd;
+    --primary-foreground: #9aa6b2;
+
+    --secondary: #bcccdc;
+    --secondary-foreground: #9aa6b2;
+
+    --muted: #bcccdc;
+    --muted-foreground: #9aa6b2;
+
+    --accent: #d9eafd;
+    --accent-foreground: #9aa6b2;
+
+    /* 
+      You can keep or adjust the destructive color 
+      if you need a red or a different accent 
+    */
+    --destructive: #f87171;
+    --destructive-foreground: #ffffff;
+
+    /* Borders/inputs */
+    --border: #bcccdc;
+    --input: #bcccdc;
+
+    /* Focus rings, outlines, or highlight color */
+    --ring: #9aa6b2;
+
+    /* Example chart colors—feel free to customize or remove */
+    --chart-1: #d9eafd;
+    --chart-2: #bcccdc;
+    --chart-3: #9aa6b2;
+    --chart-4: #f8fafc;
+    --chart-5: #9aa6b2;
+
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* 
+      Your dark mode palette 
+      Simply inverts or reassigns the above colors
+      so #9AA6B2 acts as the background 
+      and #F8FAFC becomes the foreground 
+    */
+    --background: #9aa6b2;
+    --foreground: #f8fafc;
+
+    --card: #bcccdc;
+    --card-foreground: #f8fafc;
+
+    --popover: #bcccdc;
+    --popover-foreground: #f8fafc;
+
+    --primary: #d9eafd;
+    --primary-foreground: #9aa6b2;
+
+    --secondary: #bcccdc;
+    --secondary-foreground: #f8fafc;
+
+    --muted: #9aa6b2;
+    --muted-foreground: #f8fafc;
+
+    --accent: #d9eafd;
+    --accent-foreground: #9aa6b2;
+
+    --destructive: #f43f5e;
+    --destructive-foreground: #f8fafc;
+
+    --border: #9aa6b2;
+    --input: #9aa6b2;
+
+    --ring: #f8fafc;
+
+    --chart-1: #d9eafd;
+    --chart-2: #bcccdc;
+    --chart-3: #f8fafc;
+    --chart-4: #9aa6b2;
+    --chart-5: #d9eafd;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
