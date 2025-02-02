@@ -1,6 +1,6 @@
 "use client";
-import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import Image from "next/image";
+import { Card, Carousel } from "./apple-cards-carousel";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -8,11 +8,13 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Get to know your iSad.
-      </h2>
-      <Carousel items={cards} />
+    <div className="w-full py-20">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mb-8">
+          Get to know your iSad.
+        </h2>
+        <Carousel items={cards} />
+      </div>
     </div>
   );
 }
