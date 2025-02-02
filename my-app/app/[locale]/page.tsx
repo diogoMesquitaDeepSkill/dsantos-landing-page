@@ -7,9 +7,11 @@ import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations("Home");
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <ImagesSliderDemo />
-      <Hero />
+      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Hero />
+      </div>
       <AppleCardsCarouselDemo />
       <Footer />
     </div>

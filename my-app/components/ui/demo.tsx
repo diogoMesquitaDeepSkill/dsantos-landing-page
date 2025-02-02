@@ -3,14 +3,7 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 import { motion } from "framer-motion";
 
 export function ImagesSliderDemo() {
-  const images = [
-    "/ex1.png",
-    "/ex2.png",
-    "/ex3.png",
-    "/ex4.png",
-    "/ex5.png",
-    "/ex6.png",
-  ];
+  const images = ["/ex2.png", "/ex3.png", "/ex4.png", "/ex5.png", "/ex6.png"];
 
   return (
     <ImagesSlider className="h-[40rem]" images={images}>

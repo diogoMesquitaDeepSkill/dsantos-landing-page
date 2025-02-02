@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="py-32">
-      <div className="container">
+    <section className="py-16 sm:py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <Badge variant="outline">
@@ -30,11 +30,13 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <img
-            src="https://shadcnblocks.com/images/block/placeholder-1.svg"
-            alt="placeholder hero"
-            className="max-h-96 w-full rounded-md object-cover"
-          />
+          <div className="mt-8 lg:mt-0">
+            <img
+              src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+              alt="placeholder hero"
+              className="mx-auto max-h-96 w-full rounded-md object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
