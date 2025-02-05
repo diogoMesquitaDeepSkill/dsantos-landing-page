@@ -2,11 +2,16 @@
 
 import nodemailer from "nodemailer"
 
-export async function sendEmail( formData: FormData) {
-  const name = formData.get("name")
-  const email = formData.get("email")
-  const phone = formData.get("phone")
-  const message = formData.get("message")
+type FormState = {
+  message: string
+  error?: boolean
+} | null
+
+export async function sendEmail(prevState: FormState, formData: FormData): Promise<FormState> {
+  const name = formData.get("name") as string
+  const email = formData.get("email") as string
+  const phone = formData.get("phone") as string | null
+  const message = formData.get("message") as string
 
   // Create a Nodemailer transporter
   const transporter = nodemailer.createTransport({

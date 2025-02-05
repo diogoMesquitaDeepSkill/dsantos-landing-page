@@ -1,6 +1,7 @@
 "use client";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import { motion } from "framer-motion";
+import { Button } from "./button";
 import { TextLoop } from "./text-loop";
 
 export function ImagesSliderDemo() {
@@ -35,10 +36,9 @@ export function ImagesSliderDemo() {
             </span>
           ))}
         </TextLoop>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Contact us</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
+        <Button className="mt-6 w-full sm:w-auto text-white px-6 py-2 rounded-md border border-white hover:bg-black hover:text-white transition-all duration-300">
+          Contact us
+        </Button>
       </motion.div>
     </ImagesSlider>
   );
