@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           <div className="mt-8 lg:mt-0">
             <img
-              src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+              src="/showroom.jpg"
               alt="placeholder hero"
               className="mx-auto max-h-96 w-full rounded-md object-cover"
             />
