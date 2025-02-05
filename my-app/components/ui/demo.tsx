@@ -8,7 +8,7 @@ export function ImagesSliderDemo() {
   const images = ["/ex2.png", "/ex3.png", "/ex4.png", "/ex5.png", "/ex6.png"];
 
   return (
-    <ImagesSlider className="h-[40rem]" images={images}>
+    <ImagesSlider className="h-[40rem] mt-16" images={images}>
       <motion.div
         initial={{
           opacity: 0,
