@@ -26,44 +26,44 @@ export function FeaturesSectionWithCardGradient() {
 
 const grid = [
   {
-    title: "HIPAA and SOC2 Compliant",
+    title: "High-Quality Porcelain Tiles",
     description:
-      "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+      "Our tiles (GVT) are made from premium components, ensuring durability, elegance, and long-lasting performance.",
   },
   {
-    title: "Automated Social Media Posting",
+    title: "Precision Rectified Edges",
     description:
-      "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+      "With rectified edges, our tiles have minimal imperfections and perfect alignment for a seamless finish.",
   },
   {
-    title: "Advanced Analytics",
+    title: "Fast & Insured Delivery",
     description:
-      "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+      "We deliver directly to your address within 40-60 days, with full insurance coverage for peace of mind.",
   },
   {
-    title: "Content Calendar",
+    title: "Competitive Pricing",
     description:
-      "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+      "We offer the best prices in the market without compromising on quality, making premium tiles more affordable.",
   },
   {
-    title: "Audience Targeting",
+    title: "Superior Durability & Strength - 9mm Thickness",
     description:
-      "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+      "Our tiles exceed industry standards in strength and resistance, withstanding heavy impact and flexural stress.",
   },
   {
-    title: "Social Listening",
+    title: "Water & Stain Resistance",
     description:
-      "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+      "With an absorption rate of less than 0.40%, our tiles are highly resistant to water and stains, making them perfect for any space.",
   },
   {
-    title: "Customizable Templates",
+    title: "Slip & Frost Resistance",
     description:
-      "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+      "Designed for safety, our tiles feature anti-slip surfaces and are frost-resistant, making them ideal for both indoor and outdoor use.",
   },
   {
-    title: "Collaboration Tools",
+    title: "Eco-Friendly & Chemical Resistant",
     description:
-      "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+      "Our tiles are environmentally friendly and resistant to chemicals, ensuring a safe and sustainable choice for your space.",
   },
 ];
 

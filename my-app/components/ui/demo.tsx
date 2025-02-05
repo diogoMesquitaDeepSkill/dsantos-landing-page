@@ -36,7 +36,7 @@ export function ImagesSliderDemo() {
             </span>
           ))}
         </TextLoop>
-        <Button className="mt-6 w-full sm:w-auto text-white px-6 py-2 rounded-md border border-white hover:bg-black hover:text-white transition-all duration-300">
+        <Button className="mt-6 w-full sm:w-auto text-white px-6 py-2 rounded-md border border-white bg-transparent hover:bg-primary hover:text-white transition-all duration-300">
           Contact us
         </Button>
       </motion.div>

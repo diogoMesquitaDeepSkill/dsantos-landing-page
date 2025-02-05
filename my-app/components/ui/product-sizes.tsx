@@ -63,7 +63,7 @@ export function ProductSizes() {
     <Card className="w-full shadow-[0px_7px_21px_rgba(0,0,0,0.25)] border-none">
       {" "}
       {/* Ensures all text inside the card is black */}
-      <CardHeader>
+      <CardHeader className="mb-4">
         <CardTitle className="text-black">Our Product Sizes</CardTitle>
         <CardDescription className="text-gray-600">
           Explore our wide range of sizes and finishes
