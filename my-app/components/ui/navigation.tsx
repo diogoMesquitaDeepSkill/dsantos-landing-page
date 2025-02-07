@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -22,7 +23,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold">
-              DSantos
+              <img
+                src="/logo-onlydsantos250.png" // path to your logo image
+                alt="Logo"
+                className="h-7 w-auto" // adjust the size of the logo
+              />
             </Link>
           </div>
           <div className="hidden md:block">
@@ -101,4 +106,3 @@ export function Navigation() {
     </nav>
   )
 }
-
