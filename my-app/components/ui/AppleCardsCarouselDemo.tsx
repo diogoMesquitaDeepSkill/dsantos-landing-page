@@ -1,8 +1,12 @@
 "use client";
 import Image from "next/image";
 import { Card, Carousel } from "./apple-cards-carousel";
+import { useTranslations } from "next-intl";
 
 export function AppleCardsCarouselDemo() {
+
+  const t = useTranslations()
+
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
@@ -11,7 +15,7 @@ export function AppleCardsCarouselDemo() {
     <div className="w-full py-20">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mb-8">
-          Explore Our Tile Finishes
+          {t('exploreOurFinishes')}
         </h2>
         <Carousel items={cards} />
       </div>

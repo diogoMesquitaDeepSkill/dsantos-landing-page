@@ -1,6 +1,6 @@
 {
-    "HomePage": {
-        "title": "Startseite",
-        "description": "Dies ist die Startseite"
-    }
+  "title": "Startseite",
+  "description": "Dies ist die Startseite",
+  "exploreOurFinishes": "Explore our Tile Finishes",
+  "catalogue": "Catalogue"
 }

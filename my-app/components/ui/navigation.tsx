@@ -1,19 +1,20 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+import { Button } from "@/components/ui/button"
+import { Menu } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
+import { LanguageSelector } from "./languageSelector"
 
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Our Product", href: "/" },
   { name: "Specifications", href: "/" },
   { name: "Sizes", href: "/" },
-];
+]
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-md">
@@ -37,12 +38,13 @@ export function Navigation() {
               ))}
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             <Button
               onClick={() => {
-                const contactForm = document.getElementById("contact-form");
+                const contactForm = document.getElementById("contact-form")
                 if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: "smooth" });
+                  contactForm.scrollIntoView({ behavior: "smooth" })
                 }
               }}
             >
@@ -63,32 +65,40 @@ export function Navigation() {
 
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
+          <div className="px-2 pt-2 pb-3 sm:px-3">
+            {navItems.map((item, index) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+                className={`text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium ${
+                  index !== 0 ? "mt-1" : ""
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <Button
-              className="w-full mt-4"
-              onClick={() => {
-                setIsOpen(false);
-                const contactForm = document.getElementById("contact-form");
-                if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            >
-              Contact
-            </Button>
+            <div className="mt-4">
+              <LanguageSelector />
+            </div>
+            <div className="mt-6">
+              <Button
+                className="w-full"
+                onClick={() => {
+                  setIsOpen(false)
+                  const contactForm = document.getElementById("contact-form")
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
+              >
+                Contact
+              </Button>
+            </div>
           </div>
         </div>
       )}
     </nav>
-  );
+  )
 }
+

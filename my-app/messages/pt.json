@@ -1,6 +1,7 @@
 {
-    "HomePage": {
-        "title": "Página Inicial",
-        "description": "Esta é a página inicial"
-    }
+  "title": "Página Inicial",
+  "description": "Esta é a página inicial",
+  "exploreOurFinishes": "Explora os nossos Acabamentos de Pavimento",
+  "catalogue": "Catálogo"
 }
+
