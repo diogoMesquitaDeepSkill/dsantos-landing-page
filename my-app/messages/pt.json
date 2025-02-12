@@ -62,5 +62,67 @@
   "phoneLabel": "Número de Telefone (opcional)",
   "messageLabel": "Mensagem",
   "sendMessage": "Enviar Mensagem",
-  "sending": "A Enviar..."
+  "sending": "A Enviar...",
+  "finishes": {
+    "polished": "Polido",
+    "matte": "Mate",
+    "polishedHighGloss": "Alto Brilho",
+    "antiSlipMatte": "Mate Antiderrapante",
+    "carvingMatte": "Mate com Relevo"
+  },
+  "productSizesTitle": "Os Nossos Tamanhos",
+  "productSizesDescription": "Explore a nossa vasta gama de tamanhos e acabamentos de azulejos.",
+  "interestedButton": "Interessado? Contacte-nos",
+  "sizesProduct": [
+    {
+      "size": "60x120cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "120x120cm",
+      "finishes": ["polished", "matte", "polishedHighGloss", "antiSlipMatte"]
+    },
+    {
+      "size": "120x240cm",
+      "finishes": ["polished", "matte", "polishedHighGloss", "antiSlipMatte"]
+    },
+    {
+      "size": "60x60cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "80x160cm",
+      "finishes": [
+        "glossy",
+        "matte",
+        "polishedHighGloss",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "30x60cm",
+      "finishes": ["glossy", "matte"]
+    },
+    {
+      "size": "80x80cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss"]
+    },
+    {
+      "size": "100x100cm",
+      "finishes": ["glossy", "matte"]
+    }
+  ],
+  "newCollections": "Confira as nossas novas coleções"
 }

@@ -36,7 +36,7 @@ export const ContactForm = () => {
   const [state, formAction] = useFormState(sendEmail, null);
 
   return (
-    <Card className="w-full shadow-[0px_7px_21px_rgba(0,0,0,0.25)] border-none">
+    <Card className="w-full shadow-[0px_7px_21px_rgba(0,0,0,0.25)] border-none bg-white">
       <CardHeader>
         <CardTitle className="text-black">{t("contactFormTitle")}</CardTitle>
         <CardDescription className="text-gray-600">

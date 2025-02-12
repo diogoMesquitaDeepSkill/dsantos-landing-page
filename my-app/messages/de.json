@@ -62,5 +62,64 @@
   "phoneLabel": "Telefonnummer (optional)",
   "messageLabel": "Nachricht",
   "sendMessage": "Nachricht senden",
-  "sending": "Wird gesendet..."
+  "sending": "Wird gesendet...",
+  "productSizesTitle": "Unsere Produktgrößen",
+  "productSizesDescription": "Entdecken Sie unsere große Auswahl an Fliesengrößen und Oberflächen.",
+
+  "interestedButton": "Interessiert? Kontaktieren Sie uns",
+
+  "finishes": {
+    "polished": "Poliert",
+    "matte": "Matt",
+    "polishedHighGloss": "Polierter Hochglanz",
+    "antiSlipMatte": "Rutschfest Matt",
+    "carvingMatte": "Strukturiertes Matt"
+  },
+
+  "sizesProduct": [
+    {
+      "size": "60x120cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "120x120cm",
+      "finishes": ["glossy", "matte"]
+    },
+    {
+      "size": "120x240cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss"]
+    },
+    {
+      "size": "60x60cm",
+      "finishes": ["matte", "carvingMatte"]
+    },
+    {
+      "size": "80x160cm",
+      "finishes": [
+        "glossy",
+        "matte",
+        "polishedHighGloss",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "30x60cm",
+      "finishes": ["glossy", "matte"]
+    },
+    {
+      "size": "80x80cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss"]
+    },
+    {
+      "size": "100x100cm",
+      "finishes": ["glossy", "matte"]
+    }
+  ],
+  "newCollections": "Entdecken Sie unsere neuen Kollektionen"
 }

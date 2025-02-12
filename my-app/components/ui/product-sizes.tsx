@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const TileSizeIcon = ({ className = "" }) => (
   <svg
@@ -26,44 +27,58 @@ const sizes = [
   {
     size: "60x120cm",
     finishes: [
-      "Polished",
-      "Matt",
-      "High gloss",
-      "Anti-slip Matt",
-      "Carving Matt",
+      "polished",
+      "matte",
+      "polishedHighGloss",
+      "antiSlipMatte",
+      "carvingMatte",
     ],
   },
   {
     size: "120x120cm",
-    finishes: ["Glossy", "Matt", "Satin Matt"],
+    finishes: [
+      "polished",
+      "matte",
+      "polishedHighGloss",
+      "antiSlipMatte",
+      "carvingMatte",
+    ],
   },
   {
     size: "120x240cm",
-    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss"],
+    finishes: ["polished", "matte", "antiSlipMatte", "polishedHighGloss"],
   },
   {
     size: "60x60cm",
-    finishes: ["Matt", "Carving Matt"],
+    finishes: [
+      "polished",
+      "matte",
+      "polishedHighGloss",
+      "antiSlipMatte",
+      "carvingMatte",
+    ],
   },
   {
     size: "80x160cm",
-    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss", "Carving matt"],
+    finishes: ["glossy", "matte", "polishedHighGloss", "carvingMatte"],
   },
   {
     size: "30x60cm",
-    finishes: ["Glossy", "Matt", "GVT/PGVT"],
+    finishes: ["polished", "matte", "antiSlipMatte"],
   },
   {
     size: "80x80cm",
-    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss"],
+    finishes: ["polished", "matte", "polishedHighGloss"],
   },
   {
     size: "100x100cm",
-    finishes: ["Glossy", "Matt", "Satin Matt"],
+    finishes: ["polished", "matte", "polishedHighGloss"],
   },
 ];
 
 export function ProductSizes() {
+  const t = useTranslations();
+
   const scrollToContact = () => {
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
@@ -75,11 +90,9 @@ export function ProductSizes() {
     <section className="w-full py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-left mb-8 text-gray-800">
-          Our Product Sizes
+          {t("productSizesTitle")}
         </h2>
-        <p className="text-gray-600 mb-8">
-          Explore our wide range of sizes and finishes.
-        </p>
+        <p className="text-gray-600 mb-8">{t("productSizesDescription")}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {sizes.map((item, index) => (
             <Card
@@ -102,7 +115,7 @@ export function ProductSizes() {
                       className="flex items-center text-gray-600"
                     >
                       <ChevronRight className="h-4 w-4 mr-2 text-primary" />
-                      {finish}
+                      {t(`finishes.${finish}`)}
                     </li>
                   ))}
                 </ul>
@@ -115,7 +128,7 @@ export function ProductSizes() {
             onClick={scrollToContact}
             className="px-8 py-3 bg-primary text-white hover:bg-primary/90 transition-colors duration-300"
           >
-            Interested? Contact Us
+            {t("interestedButton")}
           </Button>
         </div>
       </div>

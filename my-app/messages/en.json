@@ -62,5 +62,57 @@
   "phoneLabel": "Phone Number (optional)",
   "messageLabel": "Message",
   "sendMessage": "Send Message",
-  "sending": "Sending..."
+  "sending": "Sending...",
+  "productSizesTitle": "Our Sizes",
+  "productSizesDescription": "Explore our wide range of tile sizes and finishes.",
+  "interestedButton": "Interested? Contact Us",
+  "finishes": {
+    "polished": "Polished",
+    "matte": "Matte",
+    "polishedHighGloss": "Polished High Gloss",
+    "antiSlipMatte": "Anti-Slip Matte",
+    "carvingMatte": "Carving Matte",
+    "glossy": "Glossy"
+  },
+  "sizesProduct": [
+    {
+      "size": "60x120cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "120x120cm",
+      "finishes": ["glossy", "matte"]
+    },
+    {
+      "size": "120x240cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss"]
+    },
+    {
+      "size": "60x60cm",
+      "finishes": ["matte", "carvingMatte"]
+    },
+    {
+      "size": "80x160cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss", "carvingMatte"]
+    },
+    {
+      "size": "30x60cm",
+      "finishes": ["glossy", "matte"]
+    },
+    {
+      "size": "80x80cm",
+      "finishes": ["glossy", "matte", "polishedHighGloss"]
+    },
+    {
+      "size": "100x100cm",
+      "finishes": ["glossy", "matte"]
+    }
+  ],
+  "newCollections": "Entdecken Sie unsere neuen Kollektionen"
 }
