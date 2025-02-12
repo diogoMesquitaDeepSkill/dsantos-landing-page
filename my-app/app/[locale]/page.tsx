@@ -3,6 +3,7 @@ import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { ContactForm } from "@/components/ui/contactform";
 import { ImagesSliderDemo } from "@/components/ui/demo";
 import { FeaturesSectionWithCardGradient } from "@/components/ui/feature-section-with-card-gradient";
+import FileSection from "@/components/ui/file-section";
 import Footer from "@/components/ui/footer";
 import Hero from "@/components/ui/hero";
 import { Navigation } from "@/components/ui/navigation";
@@ -25,8 +26,6 @@ export default function Home() {
 
       <div className="w-full py-20 lg:py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FeaturesSectionWithCardGradient />
-
           {/* Add ID here */}
           <div id="specifications" className="mt-20">
             <FeaturesSectionWithCardGradient />
@@ -40,6 +39,10 @@ export default function Home() {
           {/* Add ID here */}
           <div id="contact-form" className="mt-20">
             <ContactForm />
+          </div>
+
+          <div id="file-section" className="mt-20">
+            <FileSection />
           </div>
         </div>
       </div>
