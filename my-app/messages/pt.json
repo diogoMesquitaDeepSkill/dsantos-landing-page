@@ -104,25 +104,30 @@
     },
     {
       "size": "80x160cm",
-      "finishes": [
-        "glossy",
-        "matte",
-        "polishedHighGloss",
-        "carvingMatte"
-      ]
+      "finishes": ["polished", "matte", "polishedHighGloss", "carvingMatte"]
     },
     {
       "size": "30x60cm",
-      "finishes": ["glossy", "matte"]
+      "finishes": ["polished", "matte"]
     },
     {
       "size": "80x80cm",
-      "finishes": ["glossy", "matte", "polishedHighGloss"]
+      "finishes": ["polished", "matte", "polishedHighGloss"]
     },
     {
       "size": "100x100cm",
-      "finishes": ["glossy", "matte"]
+      "finishes": ["polished", "matte"]
     }
   ],
-  "newCollections": "Confira as nossas novas coleções"
+  "newCollections": "Confira as nossas novas coleções",
+  "meetDsantosTitle": "Conheça a DSantos – O Seu Fornecedor de Grés Porcelânico",
+  "meetDsantosText": "Somos especialistas em Grés Porcelânico, pavimentos cerâmicos de alta qualidade. Oferecemos superfícies duráveis e elegantes para empresas que procuram soluções de revestimento premium.",
+  "catalogue2025Title": "Catálogo Coleção 2025",
+  "catalogue2025Desc": "O nosso catálogo principal, com vários acabamentos disponíveis para cada opção.",
+  "highGlossCatalogueTitle": "Catálogo Alto Brilho",
+  "highGlossCatalogueDesc": "Focado no nosso acabamento mais premium – Alto Brilho.",
+  "whiteMarbleCatalogueTitle": "Catálogo Mármore Branco",
+  "whiteMarbleCatalogueDesc": "Uma coleção de azulejos elegantes com efeito mármore branco.",
+  "open": "Abrir",
+  "meetOurFeatures": "Conheça o nosso produto em detalhe"
 }

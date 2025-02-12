@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -6,38 +8,35 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Download, FileCode, FileSpreadsheet, FileText } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
-
-const files = [
-  {
-    icon: <FileText className="h-8 w-8" />,
-    title: "Product Catalogue",
-    description: "Complete list of our products with details",
-    downloadUrl: "#",
-  },
-  {
-    icon: <FileSpreadsheet className="h-8 w-8" />,
-    title: "Specification Sheet",
-    description: "Technical specifications for all products",
-    downloadUrl: "#",
-  },
-  {
-    icon: <FileCode className="h-8 w-8" />,
-    title: "API Documentation",
-    description: "Guide for integrating with our systems",
-    downloadUrl: "#",
-  },
-  {
-    icon: <FileText className="h-8 w-8" />,
-    title: "User Manual",
-    description: "Detailed instructions for product usage",
-    downloadUrl: "#",
-  },
-];
 
 export default function FileSection() {
   const t = useTranslations();
+
+  const files = [
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("catalogue2025Title"),
+      description: t("catalogue2025Desc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/2025collection-Nduqpg1NdQEvl4zCcOX2EQyathLZat.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("highGlossCatalogueTitle"),
+      description: t("highGlossCatalogueDesc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/highgloss2025-zqPXY9s9mWshajcKXI6RcXWSaUhl8r.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("whiteMarbleCatalogueTitle"),
+      description: t("whiteMarbleCatalogueDesc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/whitemarble2025-YmF2oaQNf5k3Lx3VgM7upzd7VjlxRH.pdf",
+    },
+  ];
 
   return (
     <section className="w-full py-12">
@@ -61,9 +60,10 @@ export default function FileSection() {
                 <Button
                   variant="outline"
                   className="w-full text-primary hover:bg-primary hover:text-white border-primary"
+                  onClick={() => window.open(file.downloadUrl, "_blank")}
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  {t("download")}
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  {t("open")}
                 </Button>
               </CardFooter>
             </Card>

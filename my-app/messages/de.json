@@ -89,11 +89,11 @@
     },
     {
       "size": "120x120cm",
-      "finishes": ["glossy", "matte"]
+      "finishes": ["polished", "matte"]
     },
     {
       "size": "120x240cm",
-      "finishes": ["glossy", "matte", "polishedHighGloss"]
+      "finishes": ["polished", "matte", "polishedHighGloss"]
     },
     {
       "size": "60x60cm",
@@ -101,25 +101,30 @@
     },
     {
       "size": "80x160cm",
-      "finishes": [
-        "glossy",
-        "matte",
-        "polishedHighGloss",
-        "carvingMatte"
-      ]
+      "finishes": ["polished", "matte", "polishedHighGloss", "carvingMatte"]
     },
     {
       "size": "30x60cm",
-      "finishes": ["glossy", "matte"]
+      "finishes": ["polished", "matte"]
     },
     {
       "size": "80x80cm",
-      "finishes": ["glossy", "matte", "polishedHighGloss"]
+      "finishes": ["polished", "matte", "polishedHighGloss"]
     },
     {
       "size": "100x100cm",
-      "finishes": ["glossy", "matte"]
+      "finishes": ["polished", "matte"]
     }
   ],
-  "newCollections": "Entdecken Sie unsere neuen Kollektionen"
+  "newCollections": "Entdecken Sie unsere neuen Kollektionen",
+  "meetDsantosTitle": "Lernen Sie DSantos kennen – Ihr Lieferant für Feinsteinzeugfliesen",
+  "meetDsantosText": "Wir sind spezialisiert auf hochwertige Feinsteinzeugfliesen (GVT), auch bekannt als Steinzeugfliesen. Unsere langlebigen und eleganten Oberflächen sind ideal für Unternehmen, die erstklassige Bodenlösungen anbieten möchten.",
+  "catalogue2025Title": "Katalog Kollektion 2025",
+  "catalogue2025Desc": "Unser Hauptkatalog mit mehreren verfügbaren Oberflächen für jede Option.",
+  "highGlossCatalogueTitle": "Polierter Hochglanz Katalog",
+  "highGlossCatalogueDesc": "Fokussiert auf unser exklusivstes Finish – Polierter Hochglanz.",
+  "whiteMarbleCatalogueTitle": "Weißer Marmor Katalog",
+  "whiteMarbleCatalogueDesc": "Eine Kollektion eleganter Fliesen in weißer Marmoroptik.",
+  "open": "Öffnen",
+  "meetOurFeatures": "Lernen Sie unser Produkt im Detail kennen"
 }

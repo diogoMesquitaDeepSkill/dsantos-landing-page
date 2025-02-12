@@ -17,9 +17,10 @@ const Hero = () => {
               {t("newCollections")}
               <ArrowDownRight className="ml-2 size-4" />
             </Badge>
-            <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
+            <h1 className="my-6 text-pretty text-3xl text-primary font-bold lg:text-5xl">
               {t("meetDsantosTitle")}
             </h1>
+
             <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
               {t("meetDsantosText")}
             </p>

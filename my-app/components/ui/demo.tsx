@@ -43,10 +43,16 @@ export function ImagesSliderDemo() {
           ))}
         </TextLoop>
 
-        {/* Contact Button - Centered */}
+        {/* Contact Button - Smooth Scroll to Contact Form */}
         <Button
+          onClick={() => {
+            const contactForm = document.getElementById("contact-form");
+            if (contactForm) {
+              contactForm.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
           className="mt-6 w-auto bg-primary text-white px-6 py-2 rounded-md hover:bg-foreground 
-                    hover:text-white transition-all duration-300"
+             hover:text-white transition-all duration-300"
         >
           {t("contactUs")}
         </Button>

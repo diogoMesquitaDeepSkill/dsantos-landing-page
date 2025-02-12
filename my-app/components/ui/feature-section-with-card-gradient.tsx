@@ -42,6 +42,9 @@ export function FeaturesSectionWithCardGradient() {
 
   return (
     <div className="py-20 lg:py-40">
+      <h2 className="text-3xl font-bold text-left text-gray-800 mb-12">
+        {t("meetOurFeatures")}
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div

@@ -45,8 +45,8 @@ export function AppleCardsCarouselDemo() {
 
   return (
     <div className="w-full py-20">
-      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mb-8">
+      <div className="max-w-[90rem] mx-auto px-4">
+        <h2 className="text-3xl font-bold text-left text-gray-800">
           {t("exploreOurTilesTitle")}
         </h2>
         <Carousel items={cards} />

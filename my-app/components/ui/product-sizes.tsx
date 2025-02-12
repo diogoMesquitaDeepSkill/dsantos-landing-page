@@ -60,7 +60,7 @@ const sizes = [
   },
   {
     size: "80x160cm",
-    finishes: ["glossy", "matte", "polishedHighGloss", "carvingMatte"],
+    finishes: ["polished", "matte", "polishedHighGloss", "carvingMatte"],
   },
   {
     size: "30x60cm",
