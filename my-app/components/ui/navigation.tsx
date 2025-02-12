@@ -1,21 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
-import Link from "next/link"
-import { useState } from "react"
-import { LanguageSelector } from "./languageSelector"
-
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Our Product", href: "/" },
-  { name: "Specifications", href: "/" },
-  { name: "Sizes", href: "/" },
-]
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useState } from "react";
+import { LanguageSelector } from "./languageSelector";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+
+  const t = useTranslations();
+
+  const navItems = [
+    { name: t("home"), href: "/" },
+    { name: t("ourProduct"), href: "#our-product" },
+    { name: t("specifications"), href: "#specifications" },
+    { name: t("sizes"), href: "#sizes" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-md">
@@ -47,13 +50,13 @@ export function Navigation() {
             <LanguageSelector />
             <Button
               onClick={() => {
-                const contactForm = document.getElementById("contact-form")
+                const contactForm = document.getElementById("contact-form");
                 if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: "smooth" })
+                  contactForm.scrollIntoView({ behavior: "smooth" });
                 }
               }}
             >
-              Contact
+              {t("contact")}
             </Button>
           </div>
           <div className="md:hidden">
@@ -61,7 +64,7 @@ export function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t("opemMainMenu")}</span>
               <Menu className="block h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -90,19 +93,19 @@ export function Navigation() {
               <Button
                 className="w-full"
                 onClick={() => {
-                  setIsOpen(false)
-                  const contactForm = document.getElementById("contact-form")
+                  setIsOpen(false);
+                  const contactForm = document.getElementById("contact-form");
                   if (contactForm) {
-                    contactForm.scrollIntoView({ behavior: "smooth" })
+                    contactForm.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
               >
-                Contact
+                {t("contact")}
               </Button>
             </div>
           </div>
         </div>
       )}
     </nav>
-  )
+  );
 }

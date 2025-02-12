@@ -1,11 +1,13 @@
 "use client";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Button } from "./button";
 import { TextLoop } from "./text-loop";
 
 export function ImagesSliderDemo() {
   const images = ["/ex2.png", "/ex3.png", "/ex4.png", "/ex5.png", "/ex6.png"];
+  const t = useTranslations();
 
   return (
     <ImagesSlider className="h-[40rem] mt-16" images={images}>
@@ -25,6 +27,11 @@ export function ImagesSliderDemo() {
       >
         <TextLoop>
           {[
+            t("textLoopText1"),
+            t("textLoopText2"),
+            t("textLoopText3"),
+            t("textLoopText4"),
+            t("textLoopText5"),
             "Do you have a business?",
             "Do you sell tiles?",
             "We'll provide you a better product.",
@@ -37,7 +44,7 @@ export function ImagesSliderDemo() {
           ))}
         </TextLoop>
         <Button className="mt-6 w-full sm:w-auto text-white px-6 py-2 rounded-md border border-white bg-transparent hover:bg-primary hover:text-white transition-all duration-300">
-          Contact us
+          {t("contactUs")}
         </Button>
       </motion.div>
     </ImagesSlider>

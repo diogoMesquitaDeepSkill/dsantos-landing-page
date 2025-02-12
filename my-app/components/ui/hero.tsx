@@ -3,8 +3,11 @@ import { ArrowDownRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations();
+
   return (
     <section className="py-16 sm:py-24 md:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,17 +18,17 @@ const Hero = () => {
               <ArrowDownRight className="ml-2 size-4" />
             </Badge>
             <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
-              Meet DSantos Products
+              {t("meetDsantosTitle")}
             </h1>
             <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
-              DSantos is a B2B Germany and Portugal based company. We are
-              focused on providing high quality tiles for the EU market and
-              beyond.
+              {t("meetDsantosText")}
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button className="w-full sm:w-auto">Primary Button</Button>
+              <Button className="w-full sm:w-auto">
+                {t("heroPrimaryButton")}
+              </Button>
               <Button variant="outline" className="w-full sm:w-auto">
-                Secondary Button
+                {t("heroSecondaryButton")}
                 <ArrowDownRight className="ml-2 size-4" />
               </Button>
             </div>

@@ -1,11 +1,51 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Card, Carousel } from "./apple-cards-carousel";
-import { useTranslations } from "next-intl";
 
 export function AppleCardsCarouselDemo() {
+  const t = useTranslations();
 
-  const t = useTranslations()
+  const data = [
+    {
+      category: t("polishedFinish"),
+      title: "A smooth, reflective surface",
+      src: "/ex2.png",
+      content: (
+        <TileContent description="Brings out the shine in every space." />
+      ),
+    },
+    {
+      category: t("matteFinish"),
+      title: "A soft, non-reflective surface",
+      src: "/ex2.png",
+      content: (
+        <TileContent description="Subtle elegance with a muted effect." />
+      ),
+    },
+    {
+      category: t("highGlossFinish"),
+      title: "Ultra-reflective, premium shine",
+      src: "/ex2.png",
+      content: (
+        <TileContent description="Luxurious brightness for your interiors." />
+      ),
+    },
+    {
+      category: t("antiSlipFinish"),
+      title: "Enhanced grip, stylish texture",
+      src: "/ex2.png",
+      content: <TileContent description="Designed for safety and style." />,
+    },
+    {
+      category: t("carvingMatte"),
+      title: "Textured patterns with a matte touch",
+      src: "/ex2.png",
+      content: (
+        <TileContent description="Adds depth and character to your spaces." />
+      ),
+    },
+  ];
 
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -15,7 +55,7 @@ export function AppleCardsCarouselDemo() {
     <div className="w-full py-20">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans mb-8">
-          {t('exploreOurFinishes')}
+          {t("exploreOurTilesTitle")}
         </h2>
         <Carousel items={cards} />
       </div>
@@ -41,46 +81,3 @@ const TileContent = ({ description }: { description: string }) => {
     </div>
   );
 };
-
-const data = [
-  {
-    category: "Polished Finish",
-    title: "A smooth, reflective surface",
-    src: "/ex2.png",
-    content: <TileContent description="Brings out the shine in every space." />,
-  },
-  {
-    category: "Matt Finish",
-    title: "A soft, non-reflective surface",
-    src: "/ex2.png",
-    content: <TileContent description="Subtle elegance with a muted effect." />,
-  },
-  {
-    category: "High Gloss Polished",
-    title: "Ultra-reflective, premium shine",
-    src: "/ex2.png",
-    content: (
-      <TileContent description="Luxurious brightness for your interiors." />
-    ),
-  },
-  {
-    category: "Antislip Matt",
-    title: "Enhanced grip, stylish texture",
-    src: "/ex2.png",
-    content: <TileContent description="Designed for safety and style." />,
-  },
-  {
-    category: "Carving Matte",
-    title: "Textured patterns with a matte touch",
-    src: "/ex2.png",
-    content: (
-      <TileContent description="Adds depth and character to your spaces." />
-    ),
-  },
-  {
-    category: "Rustic Finish",
-    title: "A naturally aged look",
-    src: "/ex2.png",
-    content: <TileContent description="Timeless charm with an earthy feel." />,
-  },
-];

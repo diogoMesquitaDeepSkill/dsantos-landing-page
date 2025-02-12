@@ -13,21 +13,37 @@ export default function Home() {
     <div className="flex flex-col items-center">
       <Navigation />
       <ImagesSliderDemo />
+
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Hero />
       </div>
-      <AppleCardsCarouselDemo />
+
+      {/* Add ID here */}
+      <div id="our-product">
+        <AppleCardsCarouselDemo />
+      </div>
+
       <div className="w-full py-20 lg:py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FeaturesSectionWithCardGradient />
-          <div className="mt-20">
+
+          {/* Add ID here */}
+          <div id="specifications" className="mt-20">
+            <FeaturesSectionWithCardGradient />
+          </div>
+
+          {/* Add ID here */}
+          <div id="sizes" className="mt-20">
             <ProductSizes />
           </div>
-          <div className="mt-20">
+
+          {/* Add ID here */}
+          <div id="contact-form" className="mt-20">
             <ContactForm />
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
