@@ -1,61 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
-// const sections = [
-//   {
-//     title: "Product",
-//     links: [{ name: "Overview", href: "#" }],
-//   },
-//   {
-//     title: "Finishes",
-//     links: [{ name: "About", href: "#" }],
-//   },
-//   {
-//     title: "Resources",
-//     links: [{ name: "Help", href: "#" }],
-//   },
-// ];
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations();
+
   return (
-    <section className="py-10">
-      <div className="container">
-        <footer>
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
-            <div className="col-span-2 mb-8 lg:mb-0">
-              <img
-                src="/logo-onlydsantos250.png"
-                alt="logo"
-                className="mb-4 h-7"
-              />
-              <p className="font-bold">Components made easy.</p>
-            </div>
-            {/* {sections.map((section, sectionIdx) => (
-              <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold">{section.title}</h3>
-                <ul className="space-y-4 text-muted-foreground">
-                  {section.links.map((link, linkIdx) => (
-                    <li
-                      key={linkIdx}
-                      className="font-medium hover:text-primary"
-                    >
-                      <a href={link.href}>{link.name}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))} */}
+    <section className="py-10 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <footer className="grid gap-4 lg:gap-6">
+          {/* Logo - Separate from Slogan */}
+          <div className="flex justify-start">
+            <img src="/logo-onlydsantos250.png" alt="logo" className="h-7" />
           </div>
-          <div className="mt-1 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
-            <p>© 2024 DSantos. All rights reserved.</p>
-            {/* <ul className="flex gap-4">
-              <li className="underline hover:text-primary">
-                <a href="#"> Terms and Conditions</a>
-              </li>
-              <li className="underline hover:text-primary">
-                <a href="#"> Privacy Policy</a>
-              </li>
-            </ul> */}
-          </div>
+
+          {/* Slogan - Takes Full Width */}
+          <p className="font-bold text-lg text-center lg:text-left w-full">
+            {t("inspiringSlogan")}
+          </p>
         </footer>
+
+        {/* Copyright - Aligned Below */}
+        <div className="mt-6 border-t pt-6 text-center md:text-left text-sm font-bold">
+          <p>{t("copyright")}</p>
+        </div>
       </div>
     </section>
   );

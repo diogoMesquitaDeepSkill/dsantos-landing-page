@@ -51,5 +51,16 @@
   "slipFrostResistanceTitle": "Slip & Frost Resistance",
   "slipFrostResistanceDesc": "Designed for safety, our tiles feature anti-slip surfaces and are frost-resistant, making them ideal for both indoor and outdoor use.",
   "ecoFriendlyTitle": "Eco-Friendly & Chemical Resistant",
-  "ecoFriendlyDesc": "Our tiles are environmentally friendly and resistant to chemicals, ensuring a safe and sustainable choice for your space."
+  "ecoFriendlyDesc": "Our tiles are environmentally friendly and resistant to chemicals, ensuring a safe and sustainable choice for your space.",
+  "inspiringSlogan": "Inspired by excellence, built for perfection.",
+  "copyright": "© 2024 DSantos - All rights reserved.",
+  "contactUs": "Contact Us",
+  "contactFormTitle": "Contact Us",
+  "contactFormDescription": "Fill out the form below to get in touch with us.",
+  "nameLabel": "Name",
+  "emailLabel": "Email",
+  "phoneLabel": "Phone Number (optional)",
+  "messageLabel": "Message",
+  "sendMessage": "Send Message",
+  "sending": "Sending..."
 }

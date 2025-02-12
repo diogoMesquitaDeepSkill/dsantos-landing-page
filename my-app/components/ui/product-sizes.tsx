@@ -24,34 +24,17 @@ const TileSizeIcon = ({ className = "" }) => (
 
 const sizes = [
   {
-    size: "30x60cm",
-    finishes: ["Glossy", "Matt", "GVT/PGVT"],
-  },
-  {
     size: "60x120cm",
     finishes: [
-      "Glossy",
+      "Polished",
       "Matt",
-      "Satin Matt",
       "High gloss",
-      "Sugar finish",
+      "Anti-slip Matt",
       "Carving Matt",
     ],
   },
   {
-    size: "80x80cm",
-    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss"],
-  },
-  {
-    size: "80x160cm",
-    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss", "Carving matt"],
-  },
-  {
     size: "120x120cm",
-    finishes: ["Glossy", "Matt", "Satin Matt"],
-  },
-  {
-    size: "100x100cm",
     finishes: ["Glossy", "Matt", "Satin Matt"],
   },
   {
@@ -59,8 +42,24 @@ const sizes = [
     finishes: ["Glossy", "Matt", "Satin Matt", "High gloss"],
   },
   {
-    size: "20x120cm",
+    size: "60x60cm",
     finishes: ["Matt", "Carving Matt"],
+  },
+  {
+    size: "80x160cm",
+    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss", "Carving matt"],
+  },
+  {
+    size: "30x60cm",
+    finishes: ["Glossy", "Matt", "GVT/PGVT"],
+  },
+  {
+    size: "80x80cm",
+    finishes: ["Glossy", "Matt", "Satin Matt", "High gloss"],
+  },
+  {
+    size: "100x100cm",
+    finishes: ["Glossy", "Matt", "Satin Matt"],
   },
 ];
 

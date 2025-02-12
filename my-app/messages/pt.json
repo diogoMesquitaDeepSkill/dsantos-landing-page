@@ -51,5 +51,16 @@
   "slipFrostResistanceTitle": "Resistência ao Escorregamento e ao Gelo",
   "slipFrostResistanceDesc": "Projetados para segurança, os nossos azulejos possuem superfícies antiderrapantes e são resistentes ao gelo, sendo ideais para interiores e exteriores.",
   "ecoFriendlyTitle": "Ecológicos e Resistentes a Produtos Químicos",
-  "ecoFriendlyDesc": "Os nossos azulejos são ecológicos e resistentes a produtos químicos, garantindo uma escolha segura e sustentável para o seu espaço."
+  "ecoFriendlyDesc": "Os nossos azulejos são ecológicos e resistentes a produtos químicos, garantindo uma escolha segura e sustentável para o seu espaço.",
+  "inspiringSlogan": "Inspirado na excelência, construído para a perfeição.",
+  "copyright": "© 2024 DSantos - Todos os direitos reservados.",
+  "contactUs": "Fale Connosco",
+  "contactFormTitle": "Fale Connosco",
+  "contactFormDescription": "Preencha o formulário abaixo para entrar em contacto connosco.",
+  "nameLabel": "Nome",
+  "emailLabel": "Email",
+  "phoneLabel": "Número de Telefone (opcional)",
+  "messageLabel": "Mensagem",
+  "sendMessage": "Enviar Mensagem",
+  "sending": "A Enviar..."
 }

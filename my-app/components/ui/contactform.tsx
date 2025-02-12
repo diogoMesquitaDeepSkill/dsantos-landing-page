@@ -13,10 +13,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useTranslations } from "next-intl";
 import { useFormState, useFormStatus } from "react-dom";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
+  const t = useTranslations();
 
   return (
     <Button
@@ -24,27 +26,28 @@ function SubmitButton() {
       className="w-full bg-primary text-white"
       disabled={pending}
     >
-      {pending ? "Sending..." : "Send Message"}
+      {pending ? t("sending") : t("sendMessage")}
     </Button>
   );
 }
 
 export const ContactForm = () => {
+  const t = useTranslations();
   const [state, formAction] = useFormState(sendEmail, null);
 
   return (
     <Card className="w-full shadow-[0px_7px_21px_rgba(0,0,0,0.25)] border-none">
       <CardHeader>
-        <CardTitle className="text-black">Contact Us</CardTitle>
+        <CardTitle className="text-black">{t("contactFormTitle")}</CardTitle>
         <CardDescription className="text-gray-600">
-          Fill out the form below to get in touch with us.
+          {t("contactFormDescription")}
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form action={formAction} className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="name" className="text-black">
-              Name
+              {t("nameLabel")}
             </Label>
             <Input
               type="text"
@@ -56,7 +59,7 @@ export const ContactForm = () => {
           </div>
           <div className="space-y-2">
             <Label htmlFor="email" className="text-black">
-              Email
+              {t("emailLabel")}
             </Label>
             <Input
               type="email"
@@ -68,7 +71,7 @@ export const ContactForm = () => {
           </div>
           <div className="space-y-2">
             <Label htmlFor="phone" className="text-black">
-              Phone Number (optional)
+              {t("phoneLabel")}
             </Label>
             <Input
               type="tel"
@@ -79,7 +82,7 @@ export const ContactForm = () => {
           </div>
           <div className="space-y-2">
             <Label htmlFor="message" className="text-black">
-              Message
+              {t("messageLabel")}
             </Label>
             <Textarea
               id="message"

@@ -43,10 +43,9 @@ export default function Home() {
           <div id="file-section" className="mt-10">
             <FileSection />
           </div>
+          <Footer />
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
