@@ -10,7 +10,7 @@ export function ImagesSliderDemo() {
   const t = useTranslations();
 
   return (
-    <ImagesSlider className="h-[40rem] mt-16" images={images}>
+    <ImagesSlider className="h-[30rem] sm:h-[40rem] mt-16" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -23,8 +23,9 @@ export function ImagesSliderDemo() {
         transition={{
           duration: 1,
         }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="z-50 flex flex-col justify-center items-center text-center"
       >
+        {/* Centered TextLoop */}
         <TextLoop>
           {[
             t("textLoopText1"),
@@ -32,18 +33,21 @@ export function ImagesSliderDemo() {
             t("textLoopText3"),
             t("textLoopText4"),
             t("textLoopText5"),
-            "Do you have a business?",
-            "Do you sell tiles?",
-            "We'll provide you a better product.",
-            "Than any competitor.",
-            "And we'll increase your margins.",
+            t("textLoopText6"),
+            t("textLoopText7"),
+            t("textLoopText8"),
           ].map((text) => (
-            <span key={text} className="block text-left">
+            <span key={text} className="block text-center">
               {text}
             </span>
           ))}
         </TextLoop>
-        <Button className="mt-6 w-full sm:w-auto text-white px-6 py-2 rounded-md border border-white bg-transparent hover:bg-primary hover:text-white transition-all duration-300">
+
+        {/* Contact Button - Centered */}
+        <Button
+          className="mt-6 w-auto bg-primary text-white px-6 py-2 rounded-md hover:bg-foreground 
+                    hover:text-white transition-all duration-300"
+        >
           {t("contactUs")}
         </Button>
       </motion.div>

@@ -9,46 +9,38 @@ export function AppleCardsCarouselDemo() {
   const data = [
     {
       category: t("polishedFinish"),
-      title: "A smooth, reflective surface",
+      title: t("polishedFinishTitle"),
       src: "/ex2.png",
-      content: (
-        <TileContent description="Brings out the shine in every space." />
-      ),
+      content: <TileContent description={t("polishedFinishDesc")} />,
     },
     {
       category: t("matteFinish"),
-      title: "A soft, non-reflective surface",
+      title: t("matteFinishTitle"),
       src: "/ex2.png",
-      content: (
-        <TileContent description="Subtle elegance with a muted effect." />
-      ),
+      content: <TileContent description={t("matteFinishDesc")} />,
     },
     {
       category: t("highGlossFinish"),
-      title: "Ultra-reflective, premium shine",
+      title: t("highGlossFinishTitle"),
       src: "/ex2.png",
-      content: (
-        <TileContent description="Luxurious brightness for your interiors." />
-      ),
+      content: <TileContent description={t("highGlossFinishDesc")} />,
     },
     {
       category: t("antiSlipFinish"),
-      title: "Enhanced grip, stylish texture",
+      title: t("antiSlipFinishTitle"),
       src: "/ex2.png",
-      content: <TileContent description="Designed for safety and style." />,
+      content: <TileContent description={t("antiSlipFinishDesc")} />,
     },
     {
       category: t("carvingMatte"),
-      title: "Textured patterns with a matte touch",
+      title: t("carvingMatteTitle"),
       src: "/ex2.png",
-      content: (
-        <TileContent description="Adds depth and character to your spaces." />
-      ),
+      content: <TileContent description={t("carvingMatteDesc")} />,
     },
   ];
 
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
+    <Card key={index} card={card} index={index} />
   ));
 
   return (
@@ -63,21 +55,24 @@ export function AppleCardsCarouselDemo() {
   );
 }
 
+// Modernized TileContent Component
 const TileContent = ({ description }: { description: string }) => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
+    <div className="bg-white dark:bg-neutral-900 p-6 md:p-10 rounded-3xl shadow-lg border border-neutral-200 dark:border-neutral-700">
+      <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-lg font-sans max-w-3xl leading-relaxed">
+        <span className="font-medium text-neutral-900 dark:text-white">
           {description}
         </span>
       </p>
-      <Image
-        src="/ex2.png"
-        alt="Tile example"
-        height={500}
-        width={500}
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-      />
+      <div className="flex justify-center mt-6">
+        <Image
+          src="/ex2.png"
+          alt="Tile example"
+          height={400}
+          width={400}
+          className="rounded-lg shadow-md object-cover"
+        />
+      </div>
     </div>
   );
 };

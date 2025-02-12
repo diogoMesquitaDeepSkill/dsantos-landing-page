@@ -1,7 +1,45 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { useTranslations } from "next-intl";
 import { useId } from "react";
 
 export function FeaturesSectionWithCardGradient() {
+  const t = useTranslations();
+
+  const grid = [
+    {
+      title: t("highQualityTitle"),
+      description: t("highQualityDesc"),
+    },
+    {
+      title: t("rectifiedEdgesTitle"),
+      description: t("rectifiedEdgesDesc"),
+    },
+    {
+      title: t("fastDeliveryTitle"),
+      description: t("fastDeliveryDesc"),
+    },
+    {
+      title: t("competitivePricingTitle"),
+      description: t("competitivePricingDesc"),
+    },
+    {
+      title: t("superiorDurabilityTitle"),
+      description: t("superiorDurabilityDesc"),
+    },
+    {
+      title: t("waterResistanceTitle"),
+      description: t("waterResistanceDesc"),
+    },
+    {
+      title: t("slipFrostResistanceTitle"),
+      description: t("slipFrostResistanceDesc"),
+    },
+    {
+      title: t("ecoFriendlyTitle"),
+      description: t("ecoFriendlyDesc"),
+    },
+  ];
+
   return (
     <div className="py-20 lg:py-40">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
@@ -23,49 +61,6 @@ export function FeaturesSectionWithCardGradient() {
     </div>
   );
 }
-
-const grid = [
-  {
-    title: "High-Quality Porcelain Tiles",
-    description:
-      "Our tiles (GVT) are made from premium components, ensuring durability, elegance, and long-lasting performance.",
-  },
-  {
-    title: "Precision Rectified Edges",
-    description:
-      "With rectified edges, our tiles have minimal imperfections and perfect alignment for a seamless finish.",
-  },
-  {
-    title: "Fast & Insured Delivery",
-    description:
-      "We deliver directly to your address within 40-60 days, with full insurance coverage for peace of mind.",
-  },
-  {
-    title: "Competitive Pricing",
-    description:
-      "We offer the best prices in the market without compromising on quality, making premium tiles more affordable.",
-  },
-  {
-    title: "Superior Durability & Strength - 9mm Thickness",
-    description:
-      "Our tiles exceed industry standards in strength and resistance, withstanding heavy impact and flexural stress.",
-  },
-  {
-    title: "Water & Stain Resistance",
-    description:
-      "With an absorption rate of less than 0.40%, our tiles are highly resistant to water and stains, making them perfect for any space.",
-  },
-  {
-    title: "Slip & Frost Resistance",
-    description:
-      "Designed for safety, our tiles feature anti-slip surfaces and are frost-resistant, making them ideal for both indoor and outdoor use.",
-  },
-  {
-    title: "Eco-Friendly & Chemical Resistant",
-    description:
-      "Our tiles are environmentally friendly and resistant to chemicals, ensuring a safe and sustainable choice for your space.",
-  },
-];
 
 export const Grid = ({
   pattern,

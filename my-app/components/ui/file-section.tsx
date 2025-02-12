@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Download, FileCode, FileSpreadsheet, FileText } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const files = [
   {
@@ -36,11 +37,13 @@ const files = [
 ];
 
 export default function FileSection() {
+  const t = useTranslations();
+
   return (
     <section className="w-full py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-left mb-8 text-gray-800">
-          Resources
+          {t("resources")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {files.map((file, index) => (
@@ -59,7 +62,8 @@ export default function FileSection() {
                   variant="outline"
                   className="w-full text-primary hover:bg-primary hover:text-white border-primary"
                 >
-                  <Download className="mr-2 h-4 w-4" /> Download
+                  <Download className="mr-2 h-4 w-4" />
+                  {t("download")}
                 </Button>
               </CardFooter>
             </Card>

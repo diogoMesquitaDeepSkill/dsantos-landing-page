@@ -19,29 +19,28 @@ export default function Home() {
         <Hero />
       </div>
 
-      {/* Add ID here */}
-      <div id="our-product">
-        <AppleCardsCarouselDemo />
-      </div>
-
       <div className="w-full py-20 lg:py-40">
+        {/* Add ID here */}
+        <div id="our-product">
+          <AppleCardsCarouselDemo />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Add ID here */}
-          <div id="specifications" className="mt-20">
+          <div id="specifications" className="mt-10">
             <FeaturesSectionWithCardGradient />
           </div>
 
           {/* Add ID here */}
-          <div id="sizes" className="mt-20">
+          <div id="sizes" className="mt-10">
             <ProductSizes />
           </div>
 
           {/* Add ID here */}
-          <div id="contact-form" className="mt-20">
+          <div id="contact-form" className="mt-10">
             <ContactForm />
           </div>
 
-          <div id="file-section" className="mt-20">
+          <div id="file-section" className="mt-10">
             <FileSection />
           </div>
         </div>

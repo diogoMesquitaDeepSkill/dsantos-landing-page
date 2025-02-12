@@ -1,57 +1,66 @@
-"use client"
+"use client";
 
-import { useRouter, usePathname } from "next/navigation"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { useRef, useEffect, useState } from "react"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const languages = [
-  { code: "en", name: "English" },
-  { code: "de", name: "Deutsch" },
-  { code: "pt", name: "Português" },
-]
+  { code: "en", name: "English", short: "EN" },
+  { code: "de", name: "Deutsch", short: "DE" },
+  { code: "pt", name: "Português", short: "PT" },
+];
 
 export function LanguageSelector() {
-  const router = useRouter()
-  const pathname = usePathname()
-  const [width, setWidth] = useState<number>(100)
-  const measureRef = useRef<HTMLSpanElement>(null)
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   // Extract the current locale from the pathname
-  const currentLocale = pathname.split("/")[1]
+  const currentLocale = pathname.split("/")[1];
 
   const handleLanguageChange = (newLocale: string) => {
-    // Construct the new path by replacing the locale
-    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`)
-    router.push(newPath)
-  }
+    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+    router.push(newPath);
+  };
 
   useEffect(() => {
-    if (measureRef.current) {
-      const newWidth = measureRef.current.offsetWidth
-      setWidth(newWidth + 40) // Add some padding
-    }
-  }, [measureRef]) // Removed unnecessary dependency: currentLocale
+    // Detect screen size for mobile vs. desktop
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-  const currentLanguage = languages.find((lang) => lang.code === currentLocale)?.name || "Language"
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Display full name on desktop, short code on mobile
+  const currentLanguage = isMobile
+    ? languages.find((lang) => lang.code === currentLocale)?.short || "EN"
+    : languages.find((lang) => lang.code === currentLocale)?.name || "Language";
 
   return (
-    <>
-      <span ref={measureRef} className="invisible absolute whitespace-nowrap">
-        {currentLanguage}
-      </span>
-      <Select value={currentLocale} onValueChange={handleLanguageChange}>
-        <SelectTrigger className="min-w-[100px] border-primary text-primary" style={{ width: `${width}px` }}>
-          <SelectValue placeholder="Language" />
-        </SelectTrigger>
-        <SelectContent>
-          {languages.map((lang) => (
-            <SelectItem className="border-primary text-primary" key={lang.code} value={lang.code}>
-              {lang.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
-    </>
-  )
+    <Select value={currentLocale} onValueChange={handleLanguageChange}>
+      <SelectTrigger className="w-auto min-w-[60px] sm:min-w-[100px] border-primary text-primary">
+        <SelectValue placeholder="Language">{currentLanguage}</SelectValue>
+      </SelectTrigger>
+      <SelectContent>
+        {languages.map((lang) => (
+          <SelectItem
+            className="border-primary text-primary"
+            key={lang.code}
+            value={lang.code}
+          >
+            {isMobile ? lang.short : lang.name}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
+  );
 }
-

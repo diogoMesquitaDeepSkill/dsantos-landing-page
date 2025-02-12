@@ -60,9 +60,9 @@ export function TextLoop({
             transition={transition}
             variants={variants || motionVariants}
             className="text-center w-full break-words whitespace-normal
-                       text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-                       font-bold text-white leading-tight tracking-tight
-                       px-2 py-1"
+                     text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+                     font-bold text-white leading-tight tracking-tight
+                     px-2 py-1"
           >
             {items[currentIndex]}
           </motion.div>
