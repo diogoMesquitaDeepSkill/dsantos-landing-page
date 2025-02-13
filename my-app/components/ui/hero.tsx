@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import { ArrowDownRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +8,13 @@ import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const t = useTranslations();
+
+  const scrollToSection = (sectionId: string): void => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="py-16 sm:py-24 md:py-32">
@@ -25,10 +33,17 @@ const Hero = () => {
               {t("meetDsantosText")}
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button className="w-full sm:w-auto">
+              <Button
+                className="w-full sm:w-auto"
+                onClick={() => scrollToSection("our-product")}
+              >
                 {t("heroPrimaryButton")}
               </Button>
-              <Button variant="outline" className="w-full sm:w-auto">
+              <Button
+                variant="outline"
+                className="w-full sm:w-auto"
+                onClick={() => scrollToSection("file-section")}
+              >
                 {t("heroSecondaryButton")}
                 <ArrowDownRight className="ml-2 size-4" />
               </Button>

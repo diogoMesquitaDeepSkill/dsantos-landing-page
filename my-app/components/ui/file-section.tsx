@@ -20,21 +20,28 @@ export default function FileSection() {
       title: t("catalogue2025Title"),
       description: t("catalogue2025Desc"),
       downloadUrl:
-        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/2025collection-Nduqpg1NdQEvl4zCcOX2EQyathLZat.pdf",
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/collection2025.pdf",
     },
     {
       icon: <FileText className="h-8 w-8" />,
       title: t("highGlossCatalogueTitle"),
       description: t("highGlossCatalogueDesc"),
       downloadUrl:
-        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/highgloss2025-zqPXY9s9mWshajcKXI6RcXWSaUhl8r.pdf",
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/highgloss2025.pdf",
     },
     {
       icon: <FileText className="h-8 w-8" />,
       title: t("whiteMarbleCatalogueTitle"),
       description: t("whiteMarbleCatalogueDesc"),
       downloadUrl:
-        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/whitemarble2025-YmF2oaQNf5k3Lx3VgM7upzd7VjlxRH.pdf",
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/whitemarble2025.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("gezelligCatalogueTitle"),
+      description: t("gezelligCatalogueDesc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/gezellig2025.pdf",
     },
   ];
 
