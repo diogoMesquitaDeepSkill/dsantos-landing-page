@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { useFormState, useFormStatus } from "react-dom";
 
 function SubmitButton() {
@@ -33,8 +34,16 @@ function SubmitButton() {
 
 export const ContactForm = () => {
   const t = useTranslations();
-  const [state, formAction] = useFormState(sendEmail, null);
+  const params = useParams();
+  const locale = params.locale as string; // Get the locale from the URL
 
+  const [state, formAction] = useFormState(
+    (
+      prevState: { message: string; error?: boolean } | null,
+      formData: FormData
+    ) => sendEmail(formData, locale),
+    null
+  );
   return (
     <Card className="w-full shadow-[0px_7px_21px_rgba(0,0,0,0.25)] border-none bg-white">
       <CardHeader>
