@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "../globals.css";
 
 import { routing } from "@/i18n/routing";
+import { HighlightInit } from "@highlight-run/next/client";
 import { Analytics } from "@vercel/analytics/react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -46,17 +47,29 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      {/* Apply your fonts & classes to the <body> */}
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* The NextIntlClientProvider makes messages/intl available on the client */}
-        <NextIntlClientProvider messages={messages}>
-          {children}
-          <Analytics />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <HighlightInit
+        projectId={"jdk50jrd"}
+        serviceName="my-nextjs-frontend"
+        tracingOrigins
+        networkRecording={{
+          enabled: true,
+          recordHeadersAndBody: true,
+          urlBlocklist: [],
+        }}
+      />
+      <html lang={locale}>
+        {/* Apply your fonts & classes to the <body> */}
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {/* The NextIntlClientProvider makes messages/intl available on the client */}
+          <NextIntlClientProvider messages={messages}>
+            {children}
+            <Analytics />
+          </NextIntlClientProvider>
+        </body>
+      </html>
+    </>
   );
 }

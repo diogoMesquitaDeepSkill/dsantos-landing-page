@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { LanguageSelector } from "./languageSelector";
 
@@ -12,8 +13,11 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations();
 
+  const params = useParams();
+  const locale = params.locale as string; // Get the locale from the URL
+
   const navItems = [
-    { name: t("home"), href: "/" },
+    { name: t("home"), href: `/${locale}` },
     { name: t("ourProduct"), href: "#our-product" },
     { name: t("specifications"), href: "#specifications" },
     { name: t("sizes"), href: "#sizes" },
@@ -26,7 +30,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold">
+            <Link href={`/${locale}`} className="text-2xl font-bold">
               <img
                 src="/logo-onlydsantos250.png"
                 alt="Logo"

@@ -15,9 +15,10 @@ export async function sendEmail(prevState: FormState, formData: FormData): Promi
 
   // Create a Nodemailer transporter
   const transporter = nodemailer.createTransport({
-    // Configure your email service here
-    // For example, using Gmail:
-    service: "gmail",
+    service: "Gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -28,7 +29,8 @@ export async function sendEmail(prevState: FormState, formData: FormData): Promi
     // Send email
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to yourself
+      to: process.env.EMAIL_TO, // Send to yourself
+      bcc: process.env.EMAIL_USER, // Also send to yourself 
       subject: "New Contact Form Submission",
       text: `
         Name: ${name}
