@@ -46,7 +46,7 @@ const sizes = [
   },
   {
     size: "120x240cm",
-    finishes: ["polished", "matte", "antiSlipMatte", "polishedHighGloss"],
+    finishes: ["polished", "matte", "polishedHighGloss", "antiSlipMatte"],
   },
   {
     size: "60x60cm",
