@@ -6,7 +6,7 @@ import { Button } from "./button";
 import { TextLoop } from "./text-loop";
 
 export function ImagesSliderDemo() {
-  const images = ["/ex2.png", "/ex3.png", "/ex4.png", "/ex5.png", "/ex6.png"];
+  const images = ["/ex1.png", "/ex3.png", "/ex4.png", "/ex5.png", "/ex6.png"];
   const t = useTranslations();
 
   return (
