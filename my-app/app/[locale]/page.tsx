@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import AboutUs from "@/components/ui/about";
 import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
