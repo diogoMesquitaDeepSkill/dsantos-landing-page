@@ -22,6 +22,7 @@ export function Navigation() {
     { name: t("specifications"), href: "#specifications" },
     { name: t("sizes"), href: "#sizes" },
     { name: t("resources"), href: "#file-section" },
+    { name: t("aboutUs"), href: "#about-us" },
   ];
 
   return (

@@ -55,7 +55,9 @@ export default function AboutUs() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-semibold mb-4">{t("ourCompany")}</h2>
+        <h2 className="text-3xl font-bold text-left mb-8 text-gray-800">
+          {t("ourCompany")}
+        </h2>
         <div className="bg-white rounded-lg shadow-md p-6">
           <p className="text-gray-700 mb-4">{t("aboutUsText1")}</p>
           <p className="text-gray-700 mb-4">{t("aboutUsText2")}</p>
