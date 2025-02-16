@@ -24,7 +24,7 @@ export function TextLoop({
   const items = Children.toArray(children);
 
   useEffect(() => {
-    const intervalMs = interval * 1500;
+    const intervalMs = interval * 1900;
 
     const timer = setInterval(() => {
       setCurrentIndex((current) => {

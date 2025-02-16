@@ -10,32 +10,48 @@ export function AppleCardsCarouselDemo() {
     {
       category: t("polishedFinish"),
       title: t("polishedFinishTitle"),
-      src: "/ex2.png",
-      content: <TileContent description={t("polishedFinishDesc")} />,
+      src: "/exx1.png",
+      content: (
+        <TileContent description={t("polishedFinishDesc")} src="/exx1.png" />
+      ),
     },
     {
       category: t("matteFinish"),
       title: t("matteFinishTitle"),
-      src: "/ex2.png",
-      content: <TileContent description={t("matteFinishDesc")} />,
+      src: "/matte.png",
+      content: (
+        <TileContent description={t("matteFinishDesc")} src="/matte.png" />
+      ),
     },
     {
       category: t("highGlossFinish"),
       title: t("highGlossFinishTitle"),
-      src: "/ex2.png",
-      content: <TileContent description={t("highGlossFinishDesc")} />,
+      src: "/highglossex.png",
+      content: (
+        <TileContent
+          description={t("highGlossFinishDesc")}
+          src="/highglossex.png"
+        />
+      ),
     },
     {
       category: t("antiSlipFinish"),
       title: t("antiSlipFinishTitle"),
-      src: "/ex2.png",
-      content: <TileContent description={t("antiSlipFinishDesc")} />,
+      src: "/antislip.png",
+      content: (
+        <TileContent
+          description={t("antiSlipFinishDesc")}
+          src="/antislip.png"
+        />
+      ),
     },
     {
       category: t("carvingMatte"),
       title: t("carvingMatteTitle"),
-      src: "/ex2.png",
-      content: <TileContent description={t("carvingMatteDesc")} />,
+      src: "/woody.png",
+      content: (
+        <TileContent description={t("carvingMatteDesc")} src="/woody.png" />
+      ),
     },
   ];
 
@@ -56,7 +72,13 @@ export function AppleCardsCarouselDemo() {
 }
 
 // Modernized TileContent Component
-const TileContent = ({ description }: { description: string }) => {
+const TileContent = ({
+  description,
+  src,
+}: {
+  description: string;
+  src: string;
+}) => {
   return (
     <div className="bg-white dark:bg-neutral-900 p-6 md:p-10 rounded-3xl shadow-lg border border-neutral-200 dark:border-neutral-700">
       <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-lg font-sans max-w-3xl leading-relaxed">
@@ -66,7 +88,7 @@ const TileContent = ({ description }: { description: string }) => {
       </p>
       <div className="flex justify-center mt-6">
         <Image
-          src="/ex2.png"
+          src={src}
           alt="Tile example"
           height={400}
           width={400}

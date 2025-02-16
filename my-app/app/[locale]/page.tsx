@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import AboutUs from "@/components/ui/about";
 import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { ContactForm } from "@/components/ui/contactform";
 import { ImagesSliderDemo } from "@/components/ui/demo";
@@ -38,6 +39,9 @@ export default function Home() {
 
           <div id="file-section" className="mt-10">
             <FileSection />
+          </div>
+          <div id="about-us" className="mt-10">
+            <AboutUs />
           </div>
           <Footer />
         </div>
