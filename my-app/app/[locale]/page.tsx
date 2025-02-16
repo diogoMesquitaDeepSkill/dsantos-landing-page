@@ -1,5 +1,3 @@
-"use client";
-
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import AboutUs from "@/components/ui/about";
 import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
@@ -12,29 +10,11 @@ import Hero from "@/components/ui/hero";
 import { Navigation } from "@/components/ui/navigation";
 import { ProductSizes } from "@/components/ui/product-sizes";
 import Head from "next/head";
-import { useParams } from "next/navigation";
 
 export default function Home() {
-  const params = useParams();
-  const locale = params.locale as string;
-
-  let title = "";
-  let description = "";
-
-  if (locale === "pt") {
-    title = "DSantos – Excelência e Inovação em Grés Porcelânico";
-    description =
-      "Somos especialistas em grés porcelânico e pavimentos cerâmicos de alta qualidade para o mercado empresarial. Graças ao nosso amplo conhecimento em logística, oferecemos soluções de revestimento premium que combinam qualidade, elegância e consistência. Descubra a excelência com a DSantos.";
-  } else if (locale === "de") {
-    title = "DSantos – Exzellenz und Innovation in Porzellansteinzeug";
-    description =
-      "Wir sind Spezialisten für Porzellansteinzeug und hochwertige keramische Bodenbeläge für den Unternehmenssektor. Dank unseres umfassenden Logistik-Know-hows bieten wir erstklassige Veredelungslösungen, die Qualität, Eleganz und Beständigkeit vereinen. Entdecken Sie Exzellenz mit DSantos.";
-  } else {
-    // Default to English
-    title = "DSantos – Excellence and Innovation in Porcelain Stoneware";
-    description =
-      "We specialize in premium porcelain stoneware and ceramic flooring solutions for the business sector. Leveraging our extensive logistics expertise, we deliver quality, elegant, and reliable cladding solutions. Discover excellence with DSantos.";
-  }
+  const title = "DSantos – Excellence and Innovation in Porcelain Stoneware";
+  const description =
+    "We specialize in premium porcelain stoneware and ceramic flooring solutions for the business sector. Leveraging our extensive logistics expertise, we deliver quality, elegant, and reliable cladding solutions. Discover excellence with DSantos.";
 
   return (
     <>
