@@ -86,31 +86,69 @@
     },
     {
       "size": "120x120cm",
-      "finishes": ["polished", "matte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "120x240cm",
-      "finishes": ["polished", "matte", "polishedHighGloss"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "60x60cm",
-      "finishes": ["matte", "carvingMatte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "80x160cm",
-      "finishes": ["polished", "matte", "polishedHighGloss", "carvingMatte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "30x60cm",
-      "finishes": ["polished", "matte"]
+      "finishes": [
+        "polished",
+        "matte"
+      ]
     },
     {
       "size": "80x80cm",
-      "finishes": ["polished", "matte", "polishedHighGloss"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "100x100cm",
-      "finishes": ["polished", "matte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     }
   ],
   "newCollections": "Check Out Our New Collections",

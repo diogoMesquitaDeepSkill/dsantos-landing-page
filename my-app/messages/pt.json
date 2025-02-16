@@ -32,31 +32,31 @@
   "textLoopText4": "Mais margem. Mais design. Mais vendas.",
   "textLoopText5": "Os seus clientes exigem o melhor – ofereça-lhes o melhor.",
   "textLoopText6": "Os nossos pavimentos cerâmicos superam qualquer concorrência.",
-  "textLoopText7": "Por que vender o comum quando pode oferecer o premium?",
+  "textLoopText7": "Porquê vender o comum quando pode oferecer o premium?",
   "textLoopText8": "Aumente os seus lucros com as nossas soluções de alta margem.",
   "heroSecondaryButton": "Veja as nossas coleções",
   "heroPrimaryButton": "Explore os nossos acabamentos",
-  "highQualityTitle": "Azulejos de Porcelanato de Alta Qualidade",
-  "highQualityDesc": "Os nossos azulejos (GVT) são fabricados com componentes premium, garantindo durabilidade, elegância e um desempenho de longa duração.",
+  "highQualityTitle": "Pavimentos de Porcelanato de Alta Qualidade",
+  "highQualityDesc": "Os nossos pavimentos são fabricados com componentes premium, garantindo durabilidade, elegância e um desempenho de longa duração.",
   "rectifiedEdgesTitle": "Bordas Retificadas de Precisão",
-  "rectifiedEdgesDesc": "Com bordas retificadas, os nossos azulejos têm imperfeições mínimas e um alinhamento perfeito para um acabamento impecável.",
+  "rectifiedEdgesDesc": "Com bordas retificadas, os nossos pavimentos têm imperfeições mínimas e um alinhamento perfeito para um acabamento impecável.",
   "fastDeliveryTitle": "Entrega Rápida e Segura",
   "fastDeliveryDesc": "Entregamos diretamente na sua morada em 40-60 dias, com cobertura total de seguro para a sua tranquilidade.",
   "competitivePricingTitle": "Preços Competitivos",
-  "competitivePricingDesc": "Oferecemos os melhores preços do mercado sem comprometer a qualidade, tornando os azulejos premium mais acessíveis.",
+  "competitivePricingDesc": "Oferecemos os melhores preços do mercado sem comprometer a qualidade, tornando os pavimentos premium mais acessíveis.",
   "superiorDurabilityTitle": "Durabilidade e Resistência Superior - 9mm de Espessura",
-  "superiorDurabilityDesc": "Os nossos azulejos excedem os padrões da indústria em resistência e durabilidade, suportando impactos fortes e tensões de flexão.",
+  "superiorDurabilityDesc": "Os nossos pavimentos excedem os padrões da indústria em resistência e durabilidade, suportando impactos fortes e tensões de flexão.",
   "waterResistanceTitle": "Resistência à Água e às Manchas",
-  "waterResistanceDesc": "Com uma taxa de absorção inferior a 0,40%, os nossos azulejos são altamente resistentes à água e às manchas, sendo perfeitos para qualquer espaço.",
+  "waterResistanceDesc": "Com uma taxa de absorção inferior a 0,40%, os nossos pavimentos são altamente resistentes à água e às manchas, sendo perfeitos para qualquer espaço.",
   "slipFrostResistanceTitle": "Resistência ao Escorregamento e ao Gelo",
-  "slipFrostResistanceDesc": "Projetados para segurança, os nossos azulejos possuem superfícies antiderrapantes e são resistentes ao gelo, sendo ideais para interiores e exteriores.",
+  "slipFrostResistanceDesc": "Projetados para segurança, os nossos pavimentos possuem superfícies antiderrapantes e são resistentes ao gelo, sendo ideais para interiores e exteriores.",
   "ecoFriendlyTitle": "Ecológicos e Resistentes a Produtos Químicos",
-  "ecoFriendlyDesc": "Os nossos azulejos são ecológicos e resistentes a produtos químicos, garantindo uma escolha segura e sustentável para o seu espaço.",
+  "ecoFriendlyDesc": "Os nossos pavimentos são ecológicos e resistentes a produtos químicos, garantindo uma escolha segura e sustentável para o seu espaço.",
   "inspiringSlogan": "Inspirado na excelência, construído para a perfeição.",
   "copyright": "© 2025 DSantos - Todos os direitos reservados.",
   "contactUs": "Fale Connosco",
   "contactFormTitle": "Fale Connosco",
-  "contactFormDescription": "Preencha o formulário abaixo para entrar em contacto connosco.",
+  "contactFormDescription": "Preencha o formulário abaixo para entrar em contacto connosco. Um membro da DSantos irá contactá-lo e responderá a qualquer pergunta ou pedido que tenha.",
   "nameLabel": "Nome",
   "emailLabel": "Email",
   "phoneLabel": "Número de Telefone (opcional)",
@@ -71,7 +71,7 @@
     "carvingMatte": "Mate com Relevo"
   },
   "productSizesTitle": "Os Nossos Tamanhos",
-  "productSizesDescription": "Explore a nossa vasta gama de tamanhos e acabamentos de azulejos.",
+  "productSizesDescription": "Explore a nossa vasta gama de tamanhos e acabamentos.",
   "interestedButton": "Interessado? Contacte-nos",
   "sizesProduct": [
     {
@@ -86,14 +86,6 @@
     },
     {
       "size": "120x120cm",
-      "finishes": ["polished", "matte", "polishedHighGloss", "antiSlipMatte"]
-    },
-    {
-      "size": "120x240cm",
-      "finishes": ["polished", "matte", "polishedHighGloss", "antiSlipMatte"]
-    },
-    {
-      "size": "60x60cm",
       "finishes": [
         "polished",
         "matte",
@@ -103,20 +95,60 @@
       ]
     },
     {
+      "size": "120x240cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
+      "size": "60x60cm",
+      "finishes": [
+        "polished",
+        "matte",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
+    },
+    {
       "size": "80x160cm",
-      "finishes": ["polished", "matte", "polishedHighGloss", "carvingMatte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "30x60cm",
-      "finishes": ["polished", "matte"]
+      "finishes": [
+        "polished",
+        "matte"
+      ]
     },
     {
       "size": "80x80cm",
-      "finishes": ["polished", "matte", "polishedHighGloss"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     },
     {
       "size": "100x100cm",
-      "finishes": ["polished", "matte"]
+      "finishes": [
+        "polished",
+        "matte",
+        "polishedHighGloss",
+        "antiSlipMatte",
+        "carvingMatte"
+      ]
     }
   ],
   "newCollections": "Confira as nossas novas coleções",
@@ -127,7 +159,7 @@
   "highGlossCatalogueTitle": "Catálogo Alto Brilho",
   "highGlossCatalogueDesc": "Focado no nosso acabamento mais premium – Alto Brilho.",
   "whiteMarbleCatalogueTitle": "Catálogo Mármore Branco",
-  "whiteMarbleCatalogueDesc": "Uma coleção de azulejos elegantes com efeito mármore branco.",
+  "whiteMarbleCatalogueDesc": "Uma coleção de pavimentos elegantes com efeito mármore branco.",
   "open": "Abrir",
   "meetOurFeatures": "Conheça o nosso produto em detalhe",
   "gezelligCatalogueTitle": "Catálogo Aconchegante",
