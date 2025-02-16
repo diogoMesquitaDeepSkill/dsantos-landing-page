@@ -10,8 +10,11 @@ import {
 } from "@/components/ui/card";
 import { ExternalLink, FileText } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
 export default function FileSection() {
+  const params = useParams();
+  const locale = params.locale as string; // Get the locale from the URL
   const t = useTranslations();
 
   const files = [
@@ -42,6 +45,12 @@ export default function FileSection() {
       description: t("gezelligCatalogueDesc"),
       downloadUrl:
         "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/gezellig2025.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("tecnicalSpecsTitle"),
+      description: t("technicalSpecsDesc"),
+      downloadUrl: `https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/technical_specs_${locale}.pdf`,
     },
   ];
 
