@@ -48,8 +48,14 @@ const translations: Record<
     subject: "Nouvelle soumission de formulaire de contact",
     notProvided: "Non fourni",
   },
+  ru: {
+    success: "Сообщение успешно отправлено!",
+    error:
+      "Не удалось отправить сообщение. Свяжитесь с нами напрямую по электронной почте: info@dsantos.de",
+    subject: "Новая заявка через контактную форму",
+    notProvided: "Не указано",
+  },
 };
-
 
 export async function sendEmail(
   formData: FormData,
