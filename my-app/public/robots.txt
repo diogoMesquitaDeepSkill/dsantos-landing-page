@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dsantos.de
+
+# Sitemaps
+Sitemap: https://dsantos.de/sitemap.xml
