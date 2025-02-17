@@ -23,7 +23,7 @@ export default function FileSection() {
       title: t("catalogue2025Title"),
       description: t("catalogue2025Desc"),
       downloadUrl:
-        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/collection2025.pdf",
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/maincollection2025.pdf",
     },
     {
       icon: <FileText className="h-8 w-8" />,
