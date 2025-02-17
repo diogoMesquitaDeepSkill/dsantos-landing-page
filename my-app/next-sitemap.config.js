@@ -1,15 +1,19 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://dsantos.de", // Change to your main domain
+  siteUrl: "https://dsantos.de", // Make sure this is correct
   generateRobotsTxt: true, // Generates a robots.txt file
-  exclude: [], // No pages to exclude since all are public
+  generateIndexSitemap: false, // Don't generate an empty sitemap index
   changefreq: "daily",
   priority: 1.0,
-  alternateRefs: [
-    { href: "https://dsantos.de/en", hreflang: "en" },
-    { href: "https://dsantos.de/de", hreflang: "de" },
-    { href: "https://dsantos.de/pt", hreflang: "pt" },
-    { href: "https://dsantos.de/fr", hreflang: "fr" },
-    { href: "https://dsantos.de/ru", hreflang: "ru" },
-  ],
+
+  // Manually define localized pages
+  additionalPaths: async (config) => {
+    return [
+      { loc: "/en", changefreq: "daily", priority: 1.0 },
+      { loc: "/pt", changefreq: "daily", priority: 1.0 },
+      { loc: "/de", changefreq: "daily", priority: 1.0 },
+      { loc: "/fr", changefreq: "daily", priority: 1.0 },
+      { loc: "/ru", changefreq: "daily", priority: 1.0 },
+    ];
+  },
 };
