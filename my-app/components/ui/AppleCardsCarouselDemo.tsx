@@ -35,6 +35,14 @@ export function AppleCardsCarouselDemo() {
       ),
     },
     {
+      category: t("carvingMatte"),
+      title: t("carvingMatteTitle"),
+      src: "/woody.png",
+      content: (
+        <TileContent description={t("carvingMatteDesc")} src="/woody.png" />
+      ),
+    },
+    {
       category: t("antiSlipFinish"),
       title: t("antiSlipFinishTitle"),
       src: "/antislip.png",
@@ -43,14 +51,6 @@ export function AppleCardsCarouselDemo() {
           description={t("antiSlipFinishDesc")}
           src="/antislip.png"
         />
-      ),
-    },
-    {
-      category: t("carvingMatte"),
-      title: t("carvingMatteTitle"),
-      src: "/woody.png",
-      content: (
-        <TileContent description={t("carvingMatteDesc")} src="/woody.png" />
       ),
     },
   ];
