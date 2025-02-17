@@ -14,7 +14,7 @@ export function Navigation() {
   const t = useTranslations();
 
   const params = useParams();
-  const locale = params.locale as string; // Get the locale from the URL
+  const locale = params.locale as string;
 
   const navItems = [
     { name: t("home"), href: `/${locale}` },
@@ -40,8 +40,8 @@ export function Navigation() {
             </Link>
           </div>
 
-          {/* Mobile Language Selector & Burger Menu - Now Closer Together */}
-          <div className="md:hidden flex items-center gap-2">
+          {/* Mobile/Tablet Language Selector & Burger Menu */}
+          <div className="lg:hidden flex items-center gap-2">
             <LanguageSelector />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -52,13 +52,13 @@ export function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden lg:block">
+            <div className="ml-4 flex items-baseline space-x-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-gray-900 px-2 py-2 rounded-md text-sm font-medium"
                 >
                   {item.name}
                 </Link>
@@ -67,7 +67,7 @@ export function Navigation() {
           </div>
 
           {/* Desktop Contact Button & Language Selector */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <LanguageSelector />
             <Button
               onClick={() => {
@@ -83,9 +83,9 @@ export function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile/Tablet Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg">
+        <div className="lg:hidden absolute top-16 left-0 w-full bg-white shadow-lg">
           <div className="px-4 pt-2 pb-3 space-y-2">
             {navItems.map((item) => (
               <Link
@@ -98,7 +98,7 @@ export function Navigation() {
               </Link>
             ))}
 
-            {/* Mobile Contact Button */}
+            {/* Mobile/Tablet Contact Button */}
             <div className="mt-4">
               <Button
                 className="w-full"

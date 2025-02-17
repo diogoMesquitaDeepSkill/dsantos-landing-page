@@ -14,7 +14,7 @@ export default function AboutUs() {
     {
       name: "Pedro Oliveira",
       role: "Commercial Director of Portugal",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/dias.jpg?height=250&width=250",
       description: t("descriptionPedro"),
     },
   ];
@@ -25,30 +25,26 @@ export default function AboutUs() {
         {t("ourTeam")}
       </h2>
       <div className="mb-16">
-        <div
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ${
-            teamMembers.length <= 2 ? "justify-center" : ""
-          }`}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className={`bg-white rounded-lg shadow-md p-6 ${
-                teamMembers.length <= 2 ? "md:col-span-1" : ""
-              }`}
+              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center md:items-start"
             >
-              <div className="flex flex-col items-center mb-4">
+              <div className="w-48 h-48 mb-4 relative overflow-hidden rounded-full">
                 <Image
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
-                  width={250}
-                  height={250}
+                  layout="fill"
+                  objectFit="cover"
                   className="rounded-full"
                 />
-                <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
               </div>
-              <p className="text-center text-gray-700">{member.description}</p>
+              <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
+              <p className="text-gray-600 mb-4">{member.role}</p>
+              <p className="text-center md:text-left text-gray-700">
+                {member.description}
+              </p>
             </div>
           ))}
         </div>
