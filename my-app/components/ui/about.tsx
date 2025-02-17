@@ -25,11 +25,11 @@ export default function AboutUs() {
         {t("ourTeam")}
       </h2>
       <div className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:justify-start">
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center md:items-start"
+              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center"
             >
               <div className="w-48 h-48 mb-4 relative overflow-hidden rounded-full">
                 <Image
@@ -42,9 +42,7 @@ export default function AboutUs() {
               </div>
               <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
               <p className="text-gray-600 mb-4">{member.role}</p>
-              <p className="text-center md:text-left text-gray-700">
-                {member.description}
-              </p>
+              <p className="text-center text-gray-700">{member.description}</p>
             </div>
           ))}
         </div>
