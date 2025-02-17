@@ -1,0 +1,178 @@
+{
+    "title": "Accueil",
+    "description": "Bienvenue sur notre page d'accueil",
+    "exploreOurFinishes": "Découvrez nos finitions de carrelage",
+    "catalogue": "Catalogue",
+    "exploreOurTilesTitle": "Découvrez les finitions haut de gamme de carreaux",
+    "polishedFinish": "Finition Polie",
+    "polishedFinishTitle": "Surface lisse et ultra-réfléchissante",
+    "polishedFinishDesc": "Parfaits pour des intérieurs luxueux, nos carreaux polis créent un effet miroir qui amplifie la luminosité et agrandit l’espace. Idéaux pour salons, hôtels et espaces commerciaux.",
+    "matteFinish": "Finition Matte",
+    "matteFinishTitle": "Aspect doux et non réfléchissant pour un rendu naturel",
+    "matteFinishDesc": "Pour instaurer une ambiance chaleureuse et sophistiquée, nos carreaux mats offrent une excellente adhérence et une texture raffinée. Conseillés pour sols résidentiels, bureaux et intérieurs contemporains.",
+    "highGlossFinish": "Finition Haute Brillance",
+    "highGlossFinishTitle": "Un éclat ultra-réfléchissant pour un effet saisissant",
+    "highGlossFinishDesc": "Conçus pour une esthétique d’exception, ces carreaux diffusent une brillance luxueuse qui accentue profondeur et élégance. Idéaux pour résidences de prestige, halls d’hôtels et espaces commerciaux premium.",
+    "antiSlipFinish": "Finition Antidérapante",
+    "antiSlipFinishTitle": "Adhérence renforcée et sécurité optimale avec une texture élégante",
+    "antiSlipFinishDesc": "Pensés pour les espaces extérieurs, salles de bains et zones à fort trafic, nos carreaux antidérapants offrent une traction exceptionnelle. Parfaits pour les environnements humides ou extérieurs tels que terrasses, balcons et abords de piscine.",
+    "carvingMatte": "Finition Carving Matte",
+    "carvingMatteTitle": "Motifs texturés rehaussés d’une touche mate pour un rendu unique",
+    "carvingMatteDesc": "Conçus pour des murs d’exception et des intérieurs artistiques, nos carreaux carving mate apportent profondeur et dimension grâce à des motifs élaborés. Parfaits pour murs d’accent, salles de bains design et espaces au style boutique.",
+    "home": "Accueil",
+    "ourProduct": "Gamme de Produits",
+    "specifications": "Spécifications",
+    "sizes": "Formats",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "download": "Télécharger",
+    "textLoopText1": "Dirigez-vous une entreprise qui vend ou utilise du grès cérame ?",
+    "textLoopText2": "Avez-vous du mal à vous procurer des revêtements en céramique haut de gamme à des tarifs compétitifs ?",
+    "textLoopText3": "Nous vous proposons du grès cérame de première qualité, sans compromis sur l’excellence.",
+    "textLoopText4": "Des marges supérieures. Un design raffiné. Davantage de ventes.",
+    "textLoopText5": "Vos clients exigent l’excellence – offrez-leur le meilleur.",
+    "textLoopText6": "Nos revêtements céramiques surpassent la concurrence.",
+    "textLoopText7": "Pourquoi se contenter du banal quand vous pouvez offrir l’exceptionnel ?",
+    "textLoopText8": "Boostez vos profits avec nos solutions à forte marge.",
+    "heroSecondaryButton": "Découvrez nos Collections",
+    "heroPrimaryButton": "Explorez nos Finitions",
+    "highQualityTitle": "Carreaux en Grès Cérame Haut de Gamme",
+    "highQualityDesc": "Nos carreaux GVT sont fabriqués à partir de composants de première qualité, garantissant durabilité, élégance et performance pérenne.",
+    "rectifiedEdgesTitle": "Bords Rectifiés avec Précision",
+    "rectifiedEdgesDesc": "Grâce à des bords rectifiés, nos carreaux présentent des imperfections minimales et un alignement parfait pour une pose harmonieuse.",
+    "fastDeliveryTitle": "Livraison Rapide et Assurée",
+    "fastDeliveryDesc": "Nous livrons directement à votre adresse sous 40 à 60 jours, avec une couverture d’assurance complète pour votre tranquillité d’esprit.",
+    "competitivePricingTitle": "Tarifs Compétitifs",
+    "competitivePricingDesc": "Nous proposons les meilleurs prix du marché sans compromis sur la qualité, rendant ainsi les carreaux premium plus accessibles.",
+    "superiorDurabilityTitle": "Durabilité et Résistance Exceptionnelles - 9 mm d'Épaisseur",
+    "superiorDurabilityDesc": "Nos carreaux dépassent les normes du secteur en matière de robustesse, supportant impacts lourds et contraintes flexionnelles.",
+    "waterResistanceTitle": "Résistance à l'Eau et aux Taches",
+    "waterResistanceDesc": "Avec un taux d’absorption inférieur à 0,40 %, nos carreaux résistent efficacement à l’eau et aux taches, les rendant parfaits pour tous types d’espaces.",
+    "slipFrostResistanceTitle": "Antidérapant et Résistant au Gel",
+    "slipFrostResistanceDesc": "Conçus pour votre sécurité, nos carreaux offrent une surface antidérapante et résistent au gel, idéaux pour une utilisation intérieure comme extérieure.",
+    "ecoFriendlyTitle": "Écologique et Résistant aux Produits Chimiques",
+    "ecoFriendlyDesc": "Respectueux de l’environnement et résistants aux produits chimiques, nos carreaux garantissent un choix sûr et durable pour vos espaces.",
+    "inspiringSlogan": "Inspirés par l’excellence, façonnés pour la perfection.",
+    "copyright": "© 2025 DSantos - Tous droits réservés.",
+    "contactUs": "Contactez-nous",
+    "contactFormTitle": "Contactez-nous",
+    "contactFormDescription": "Remplissez le formulaire ci-dessous pour nous joindre.",
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone (optionnel)",
+    "messageLabel": "Message",
+    "sendMessage": "Envoyer",
+    "sending": "Envoi en cours...",
+    "productSizesTitle": "Nos Formats",
+    "productSizesDescription": "Découvrez notre large gamme de formats et de finitions de carreaux.",
+    "interestedButton": "Intéressé ? Contactez-nous",
+    "finishes": {
+      "polished": "Poli",
+      "matte": "Matte",
+      "polishedHighGloss": "Poli Haute Brillance",
+      "antiSlipMatte": "Matte Antidérapante",
+      "carvingMatte": "Mate Sculpté"
+    },
+    "sizesProduct": [
+      {
+        "size": "60x120cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "120x120cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "120x240cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "60x60cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "80x160cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "30x60cm",
+        "finishes": [
+          "polished",
+          "matte"
+        ]
+      },
+      {
+        "size": "80x80cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      },
+      {
+        "size": "100x100cm",
+        "finishes": [
+          "polished",
+          "matte",
+          "polishedHighGloss",
+          "antiSlipMatte",
+          "carvingMatte"
+        ]
+      }
+    ],
+    "newCollections": "Découvrez nos nouvelles collections",
+    "meetDsantosTitle": "DSantos – L'excellence et l'innovation du grès cérame",
+    "meetDsantosText": "Nous sommes spécialisés dans le grès cérame haut de gamme et les solutions de revêtements céramiques pour le secteur professionnel. Forts de notre expertise logistique, nous fournissons des revêtements premium alliant qualité, élégance et fiabilité. Nous privilégions des relations solides et durables avec nos partenaires, en nous engageant avec efficacité et excellence sur chacun de vos projets.",
+    "catalogue2025Title": "Catalogue Collection 2025",
+    "catalogue2025Desc": "Découvrez notre catalogue principal présentant une diversité de finitions pour chaque modèle.",
+    "highGlossCatalogueTitle": "Catalogue Haute Brillance",
+    "highGlossCatalogueDesc": "Mettant en avant notre finition la plus premium – Haute Brillance.",
+    "whiteMarbleCatalogueTitle": "Catalogue Effet Marbre Blanc",
+    "whiteMarbleCatalogueDesc": "Une collection de carreaux au rendu marbre blanc, alliant élégance et modernité.",
+    "open": "Ouvrir",
+    "meetOurFeatures": "Découvrez en détail nos produits",
+    "gezelligCatalogueTitle": "Catalogue Gezellig",
+    "gezelligCatalogueDesc": "Une collection de carreaux au charme rustique et chaleureux, inspirée par des essences de bois et des textures naturelles.",
+    "aboutUs": "À propos",
+    "ourTeam": "Notre Équipe",
+    "ourCompany": "Notre Entreprise",
+    "aboutUsText1": "DSantos se spécialise dans le grès cérame haut de gamme et les solutions de revêtements céramiques pour les entreprises, les sociétés de construction et les professionnels du bâtiment. Nous savons que votre réputation dépend de la qualité des matériaux choisis pour vos projets.",
+    "aboutUsText2": "Opérant en Allemagne, au Portugal, en France et dans d’autres pays de l’UE, nous avons bâti notre entreprise sur trois piliers essentiels : un accès direct à des matériaux premium, des tarifs compétitifs grâce à une gestion optimisée, et un accompagnement dédié à nos partenaires. Grâce à notre partenariat exclusif avec l’un des leaders asiatiques, nous vous garantissons un approvisionnement constant en matériaux d’exception, répondant aux normes les plus exigeantes en matière de durabilité et de design.",
+    "aboutUsText3": "Nous nous distinguons par notre excellence professionnelle et la pérennité de nos relations clients. Que vous soyez un revendeur souhaitant étoffer votre offre de carreaux haut de gamme ou une entreprise de construction en quête d’un approvisionnement fiable en gros, DSantos vous offre la qualité et le service que votre activité exige. Collaborez avec nous pour accéder à des collections exclusives et bénéficier d’un accompagnement complet pour tous vos besoins en grès cérame.",
+    "descriptionDiogo": "Alliant expertise en informatique et en vente à une solide expérience entrepreneuriale, Diogo apporte une vision stratégique pour la transformation digitale et le développement commercial. Son parcours permet à DSantos d’optimiser ses opérations et d’améliorer la relation client grâce aux nouvelles technologies.",
+    "descriptionPedro": "Issu d’une formation en génie mécanique, Pedro est votre interlocuteur privilégié au Portugal. Son expertise technique et sa connaissance du marché local lui permettent d’offrir un accompagnement personnalisé et des solutions sur-mesure pour répondre aux besoins spécifiques de nos partenaires portugais.",
+    "tecnicalSpecsTitle": "Spécifications Techniques",
+    "technicalSpecsDesc": "Informations détaillées et fiches techniques complètes de nos produits."
+  }
+  

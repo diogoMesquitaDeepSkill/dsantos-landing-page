@@ -65,9 +65,7 @@
   "sending": "Wird gesendet...",
   "productSizesTitle": "Unsere Produktgrößen",
   "productSizesDescription": "Entdecken Sie unsere große Auswahl an Fliesengrößen und Oberflächen.",
-
   "interestedButton": "Interessiert? Kontaktieren Sie uns",
-
   "finishes": {
     "polished": "Poliert",
     "matte": "Matt",
@@ -75,7 +73,6 @@
     "antiSlipMatte": "Rutschfest Matt",
     "carvingMatte": "Carving Matt"
   },
-
   "sizesProduct": [
     {
       "size": "60x120cm",
@@ -157,7 +154,7 @@
   "newCollections": "Entdecken Sie unsere neuen Kollektionen",
   "meetDsantosTitle": "DSantos – Exzellenz und Innovation in Porzellansteinzeug",
   "meetDsantosText": "Wir sind Spezialisten für Porzellansteinzeug und hochwertige keramische Bodenbeläge für den Unternehmenssektor. Dank unseres umfassenden Logistik-Know-hows bieten wir erstklassige Veredelungslösungen, die Qualität, Eleganz und Beständigkeit vereinen. Wir schätzen solide Geschäftsbeziehungen und langfristige Partnerschaften mit unseren Kunden und verpflichten uns, in jedem Projekt Effizienz und Spitzenleistungen zu liefern.",
-  "catalogue2025Title": "Katalog Kollektion 2025",
+  "catalogue2025Title": "Kollektion 2025 Katalog",
   "catalogue2025Desc": "Unser Hauptkatalog mit mehreren verfügbaren Oberflächen für jede Option.",
   "highGlossCatalogueTitle": "Polierter Hochglanz Katalog",
   "highGlossCatalogueDesc": "Fokussiert auf unser exklusivstes Finish – Polierter Hochglanz.",
