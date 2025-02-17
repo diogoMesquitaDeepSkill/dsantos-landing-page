@@ -32,11 +32,7 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href={`/${locale}`} className="text-2xl font-bold">
-              <img
-                src="/logo-onlydsantos250.png"
-                alt="Logo"
-                className="h-7 w-auto"
-              />
+              <img src="/logo.png" alt="Logo" className="h-7 w-auto" />
             </Link>
           </div>
 

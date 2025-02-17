@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="grid gap-3 lg:gap-4 text-center lg:text-left">
           {/* Logo - Centered on Mobile, Left on Larger Screens */}
           <div className="flex justify-center lg:justify-start">
-            <img src="/logo-onlydsantos250.png" alt="logo" className="h-7" />
+            <img src="/logo.png" alt="logo" className="h-7" />
           </div>
 
           {/* Slogan - Centered on Mobile, Left on Desktop */}

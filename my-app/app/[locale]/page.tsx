@@ -19,9 +19,54 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/* Primary Meta Tags */}
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+
+        {/* Favicon for Browsers */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+        {/* Apple Touch Icon (For iOS Devices) */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/logo_squarish.png"
+        />
+
+        {/* Web App / PWA Icons (For Android & Windows) */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/logo_squarish.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/logo_squarish.png"
+        />
+
+        {/* Canonical URL (Now Static) */}
+        <link rel="canonical" href="https://www.dsantos.de/" />
+
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="https://www.dsantos.de/logo.png" />
+        <meta property="og:url" content="https://www.dsantos.de/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://www.dsantos.de/logo.png" />
+
+        {/* SEO Best Practices */}
+        <meta name="robots" content="index, follow" />
       </Head>
 
       <div className="flex flex-col items-center">
