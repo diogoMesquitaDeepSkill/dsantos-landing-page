@@ -10,12 +10,21 @@ export default function AboutUs() {
       role: "CEO & Founder",
       image: "/diogo_profile.jpg?height=250&width=250",
       description: t("descriptionDiogo"),
+      locale: ["pt", "fr", "de", "ru"],
     },
     {
       name: "Pedro Oliveira",
-      role: "Commercial Director of Portugal",
+      role: "Director of Commercial Operations",
       image: "/dias.jpg?height=250&width=250",
       description: t("descriptionPedro"),
+      locale: ["pt", "fr", "de", "ru"],
+    },
+    {
+      name: "Roman Leonovets",
+      role: "Director of International Operations",
+      image: "/roman.jpg?height=250&width=250",
+      description: t("descriptionRoman"),
+      locale: ["pt", "fr", "de", "ru"],
     },
   ];
 
@@ -25,7 +34,7 @@ export default function AboutUs() {
         {t("ourTeam")}
       </h2>
       <div className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:justify-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.name}
