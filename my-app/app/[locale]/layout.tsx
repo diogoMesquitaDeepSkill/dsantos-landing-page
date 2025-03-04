@@ -21,9 +21,43 @@ const geistMono = localFont({
 });
 
 // (Optional) Next.js metadata config
-export const metadata: Metadata = {
-  title: "DSantos",
-  description: "DSantos",
+
+export const generateMetadata = ({ params }: { params: { locale: "en" | "pt" | "de" | "ru" | "fr" } }): Metadata => {
+  const titles = {
+    en: "DSantos – Excellence in Porcelain Stoneware",
+    pt: "DSantos – Excelência em Grés Porcelânico",
+    de: "DSantos – Exzellenz in Feinsteinzeug",
+    ru: "DSantos – Совершенство в керамическом граните",
+    fr: "DSantos – Excellence en Grès Cérame",
+  };
+
+  const descriptions = {
+    en: "We specialize in premium porcelain stoneware and ceramic flooring solutions for the business sector. Discover excellence with DSantos.",
+    pt: "Especialistas em grés porcelânico premium e soluções de revestimento cerâmico para o setor empresarial. Descubra a excelência com a DSantos.",
+    de: "Wir sind spezialisiert auf hochwertiges Feinsteinzeug und keramische Bodenbeläge für Unternehmen. Entdecken Sie Exzellenz mit DSantos.",
+    ru: "Мы специализируемся на высококачественном керамическом граните и напольных покрытиях для бизнеса. Откройте для себя совершенство с DSantos.",
+    fr: "Nous sommes spécialisés dans le grès cérame haut de gamme et les solutions de revêtement de sol en céramique pour les entreprises. Découvrez l'excellence avec DSantos.",
+  };
+
+  return {
+    title: titles[params.locale],
+    description: descriptions[params.locale],
+    alternates: {
+      canonical: `https://dsantos.de/${params.locale}`,  // Always use the locale in the canonical URL
+      languages: {
+        "en": "https://dsantos.de/en",  // English is explicitly set as default
+        "pt": "https://dsantos.de/pt",
+        "de": "https://dsantos.de/de",
+        "ru": "https://dsantos.de/ru",
+        "fr": "https://dsantos.de/fr",
+        "x-default": "https://dsantos.de/",  // x-default still points to the root domain
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 };
 
 // This layout receives the locale param from the folder structure:
@@ -47,11 +81,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      {/* Apply your fonts & classes to the <body> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* The NextIntlClientProvider makes messages/intl available on the client */}
         <NextIntlClientProvider messages={messages}>
           {children}
           <Analytics />
