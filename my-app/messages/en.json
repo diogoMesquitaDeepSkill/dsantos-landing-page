@@ -106,12 +106,7 @@
     },
     {
       "size": "60x60cm",
-      "finishes": [
-        "polished",
-        "matte",
-        "antiSlipMatte",
-        "carvingMatte"
-      ]
+      "finishes": ["polished", "matte", "antiSlipMatte", "carvingMatte"]
     },
     {
       "size": "80x160cm",
@@ -125,10 +120,7 @@
     },
     {
       "size": "30x60cm",
-      "finishes": [
-        "polished",
-        "matte"
-      ]
+      "finishes": ["polished", "matte"]
     },
     {
       "size": "80x80cm",
@@ -175,5 +167,10 @@
   "descriptionPedro": "With a foundation in Mechanical Engineering, Pedro is the primary contact for our Portuguese clients as his technical expertise and local market knowledge ensure our Portuguese partners receive dedicated support and solutions tailored to their specific needs.",
   "descriptionRoman": "With a strong global network and a talent for building partnerships, Roman plays a crucial role in expanding DSantos' international presence. His expertise ensures seamless collaboration with partners worldwide, fostering growth and new business opportunities.",
   "tecnicalSpecsTitle": "Technical Specifications",
-  "technicalSpecsDesc": "Detailed information and complete technical specifications about our product."
+  "technicalSpecsDesc": "Detailed information and complete technical specifications about our product.",
+
+  "60x120Title": "60x120cm Catalogue",
+  "60x120Desc": "Explore our 60x120cm ceramic flooring collection, available in various premium finishes.",
+  "60x60Title": "60x60cm Catalogue",
+  "60x60Desc": "Discover our 60x60cm ceramic flooring collection, available in various premium finishes."
 }

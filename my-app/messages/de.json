@@ -106,12 +106,7 @@
     },
     {
       "size": "60x60cm",
-      "finishes": [
-        "polished",
-        "matte",
-        "antiSlipMatte",
-        "carvingMatte"
-      ]
+      "finishes": ["polished", "matte", "antiSlipMatte", "carvingMatte"]
     },
     {
       "size": "80x160cm",
@@ -125,10 +120,7 @@
     },
     {
       "size": "30x60cm",
-      "finishes": [
-        "polished",
-        "matte"
-      ]
+      "finishes": ["polished", "matte"]
     },
     {
       "size": "80x80cm",
@@ -174,5 +166,10 @@
   "descriptionPedro": "Mit seinem Fundament im Maschinenbau leitet Pedro unsere Aktivitäten in Portugal und ist der Hauptansprechpartner für unsere portugiesischen Kunden. Seine technische Expertise und Kenntnis des lokalen Marktes gewährleisten, dass unsere portugiesischen Partner maßgeschneiderte Unterstützung und Lösungen erhalten.",
   "descriptionRoman": "Mit einem starken globalen Netzwerk und einem Talent für Partnerschaften spielt Roman eine entscheidende Rolle bei der internationalen Expansion von DSantos. Seine Expertise sorgt für eine reibungslose Zusammenarbeit mit Partnern weltweit und fördert Wachstum sowie neue Geschäftsmöglichkeiten.",
   "tecnicalSpecsTitle": "Technische Spezifikationen",
-  "technicalSpecsDesc": "Detaillierte Informationen und vollständige technische Spezifikationen zum Produkt."
+  "technicalSpecsDesc": "Detaillierte Informationen und vollständige technische Spezifikationen zum Produkt.",
+
+  "60x120Title": "Katalog 60x120cm",
+  "60x120Desc": "Entdecken Sie unsere Kollektion von 60x120cm Keramikböden, erhältlich in verschiedenen hochwertigen Oberflächen.",
+  "60x60Title": "Katalog 60x60cm",
+  "60x60Desc": "Entdecken Sie unsere Kollektion von 60x60cm Keramikböden, erhältlich in verschiedenen hochwertigen Oberflächen."
 }

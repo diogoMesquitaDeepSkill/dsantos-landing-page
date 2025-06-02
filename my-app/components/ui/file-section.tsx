@@ -20,6 +20,20 @@ export default function FileSection() {
   const files = [
     {
       icon: <FileText className="h-8 w-8" />,
+      title: t("60x120Title"),
+      description: t("60x120Desc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/60x120-xYRQqZDGWMhtQK1GERBlQ2t37Lq66c.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
+      title: t("60x60Title"),
+      description: t("60x60Desc"),
+      downloadUrl:
+        "https://ked2xyen7dfafj2f.public.blob.vercel-storage.com/60X60-XvBM7AVDw9L59BE4oL8hXKq0z8zJuu.pdf",
+    },
+    {
+      icon: <FileText className="h-8 w-8" />,
       title: t("catalogue2025Title"),
       description: t("catalogue2025Desc"),
       downloadUrl:
